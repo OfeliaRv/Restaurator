@@ -12,6 +12,44 @@ body {
   margin: 0 auto;
 }
 
+.margin-465 {
+  height: 465px;
+}
+
+.top-heading {
+  text-align: center;
+  height: 400px;
+}
+
+.top-heading .heading1,
+.top-heading .heading2 {
+  z-index: 6;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  line-height: 104px;
+  font-weight: 700;
+  font-size: 134px;
+  margin: 0px;
+  color: white;
+}
+
+.top-heading .baku {
+  font-family: "Montserrat", sans-serif;
+  line-height: 12px;
+  letter-spacing: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 14px;
+  color: #e7e7e0;
+}
+
+@media screen and (max-width: 580px) {
+  .top-heading .heading1,
+  .top-heading .heading2 {
+    font-size: 82px;
+  }
+}
+
 .background-img-container {
   z-index: 0;
   height: 800px;
@@ -23,13 +61,13 @@ body {
   position: relative;
   height: 1000px;
   z-index: -1;
-  bottom: 235px;
+  bottom: 110px;
 }
 
 .background-img-container .background-img #nav-bar {
   height: 100px;
-  position: fixed;
-  top: 20px;
+  top: 130px;
+  position: absolute;
   width: 100%;
   z-index: 5;
 }
@@ -48,6 +86,10 @@ body {
   margin: 20px auto;
 }
 
+.background-img-container .background-img #nav-bar .nav .nav-logo {
+  text-align: center;
+}
+
 .background-img-container .background-img #nav-bar .nav .nav-logo h1 {
   font-family: "Sacramento", cursive;
   font-size: 51px;
@@ -59,6 +101,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 13px 0;
+  padding: 0;
 }
 
 .background-img-container .background-img #nav-bar .nav .nav-menu ul {
@@ -69,11 +112,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .background-img-container .background-img #nav-bar .nav .nav-menu ul li {
   list-style-type: none;
-  margin: 0 18px;
+  margin: 0px 10px;
+  width: 67px;
+  text-align: center;
 }
 
 .background-img-container .background-img #nav-bar .nav .nav-menu ul li a {
@@ -83,6 +130,13 @@ body {
   font-family: "Montserrat";
   line-height: 40px;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  #nav-bar {
+    position: fixed;
+    top: 20px;
+  }
 }
 
 #homepage-top .background-img-container .background-img {

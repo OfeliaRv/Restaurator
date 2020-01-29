@@ -8,12 +8,12 @@
     position: relative;
     height: 1000px;
     z-index: -1;
-    bottom: 235px;
+    bottom: 110px;
 
     #nav-bar {
       height: 100px;
-      position: fixed;
-      top: 20px;
+      top: 130px;
+      position: absolute;
       width: 100%;
       z-index: 5;
 
@@ -24,6 +24,8 @@
         margin: 20px auto;
 
         .nav-logo {
+          text-align: center;
+
           h1 {
             font-family: "Sacramento", cursive;
             font-size: 51px;
@@ -34,14 +36,19 @@
         .nav-menu {
           display: flex;
           margin: 13px 0;
+          padding: 0;
 
           ul {
             display: flex;
             flex-direction: row;
+            margin: 0 auto;
+            padding: 0;
 
             li {
               list-style-type: none;
-              margin: 0 18px;
+              margin: 0px 10px;
+              width: 67px;
+              text-align: center;
 
               a {
                 text-decoration: none;
@@ -56,5 +63,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #nav-bar {
+    position: fixed;
+    top: 20px;
   }
 }

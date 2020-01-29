@@ -1,0 +1,35 @@
+.top-heading {
+  text-align: center;
+  height: 400px;
+
+  .heading1,
+  .heading2 {
+    z-index: 6;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    line-height: 104px;
+    font-weight: 700;
+    font-size: 134px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+  }
+
+  .baku {
+    font-family: "Montserrat", sans-serif;
+    line-height: 12px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 14px;
+    color: #e7e7e0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .top-heading {
+    .heading1,
+    .heading2 {
+      font-size: 82px;
+    }
+  }
+}
