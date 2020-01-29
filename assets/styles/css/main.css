@@ -12,6 +12,14 @@ body {
   margin: 0 auto;
 }
 
+.margin-75 {
+  height: 75px;
+}
+
+.margin-175 {
+  height: 175px;
+}
+
 .margin-465 {
   height: 465px;
 }
@@ -50,6 +58,16 @@ body {
   }
 }
 
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h1 {
+  font-family: "Cormorant Garamond";
+  color: #3e3e3e;
+  font-weight: 700;
+}
+
 .background-img-container {
   z-index: 0;
   height: 800px;
@@ -62,6 +80,7 @@ body {
   height: 1000px;
   z-index: -1;
   bottom: 110px;
+  width: 100%;
 }
 
 .background-img-container .background-img #nav-bar {
@@ -141,5 +160,63 @@ body {
 
 #homepage-top .background-img-container .background-img {
   background-image: url(../../img/home-img/background-slider.jpg);
+}
+
+#how-we-help {
+  background: url(../../img/home-img/alwaysfresh.jpg);
+  height: 600px;
+  background-position: center;
+}
+
+#how-we-help .help-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#how-we-help .help-options .help-option {
+  margin: 10px 30px;
+}
+
+#how-we-help .help-options .help-option .help-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#how-we-help .help-options .help-option .help-text {
+  font-weight: 300;
+  text-align: center;
+}
+
+#how-we-help .help-options .help-option .help-text h1 {
+  font-family: "Cormorant Garamond";
+  font-size: 36px;
+  font-style: italic;
+}
+
+#how-we-help .help-options .help-option .help-text h1 span {
+  font-weight: 700;
+}
+
+#how-we-help .help-options .help-option .help-text p {
+  font-family: "Montserrat";
+  color: #646464;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  #how-we-help {
+    background: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
