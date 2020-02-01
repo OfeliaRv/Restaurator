@@ -71,5 +71,17 @@
   #nav-bar {
     position: fixed;
     top: 20px;
+
+    .nav-logo{
+      text-align: left !important;
+    }
+  }
+}
+
+@media screen and (max-width:420px){
+  .nav-menu{
+    ul{
+      width: 342px !important;
+    }
   }
 }
