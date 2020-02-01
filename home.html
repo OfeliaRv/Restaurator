@@ -50,7 +50,7 @@
 
                 <div class="top-heading">
                     <h1 class="heading1">Restaurants</h1>
-                    <h1 class="heading2">&Dishes</h1>
+                    <h1 class="heading2">&Lounges</h1>
                     <p class="baku">BAKU</p>
                 </div>
 
@@ -59,7 +59,7 @@
             </div>
         </div>
     </section>
-    
+
     <div class="margin-75"></div>
 
     <!-- NAV + TOP PART OF PAGE -->
@@ -72,7 +72,7 @@
                 <h1>How We Can Help You</h1>
                 <hr style="width: 450px;">
             </div>
-            <div class="help-options">
+            <div class="row help-options">
                 <div class="help-option col-sm-12 col-md-10 col-lg-3">
                     <div class="help-image">
                         <img src="./assets/img/home-img/picture3.png" alt="img1">
@@ -113,6 +113,110 @@
     <div class="margin-75"></div>
 
     <!-- HELPER OPTIONS -->
+
+    <!-- RESTAURANTS LIST -->
+    <section id="restaurants-list">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Any Kind Of Places For You</h1>
+                <hr style="width: 470px;">
+            </div>
+            <div class="category-buttons">
+                <div class="button-group place-type" data-filter-group="place">
+                    <button class="button active" data-filter="*"> All</button>
+                    <button class="button" data-filter=".cafe"> Cafe</button>
+                    <button class="button" data-filter=".restaurant"> Restaurant</button>
+                    <button class="button" data-filter=".bar"> Bar</button>
+                    <button class="button" data-filter=".coffeeshop"> Coffee Shop</button>
+                </div>
+                <div class="button-group food-type" data-filter-group="food">
+                    <button class="button active" data-filter="*"> All</button>
+                    <button class="button" data-filter=".dessert"> Dessert</button>
+                    <button class="button" data-filter=".fastfood"> Fast Food</button>
+                    <button class="button" data-filter=".family"> Family</button>
+                    <button class="button" data-filter=".national"> National</button>
+                    <button class="button" data-filter=".eastern"> Eastern</button>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="place family cafe col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/cafecity/cafecity1.jpg" alt="cafecity" width="250" height="180">
+                    </div>
+                    <h2>CafeCity</h2>
+                    <h6><span>Place type:</span> Cafe, Family</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place bar restaurant col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/mayamexican/maya2.jpg" alt="mayamexican" width="250" height="180">
+                    </div>
+                    <h2>Maya Mexican</h2>
+                    <h6><span>Place type:</span> Restaurant, Bar</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place fastfood family col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/fryday/fryday3.jpg" alt="fryday" width="250" height="180">
+                    </div>
+                    <h2>Fryday</h2>
+                    <h6><span>Place type:</span> Fastfood, Family</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place coffeeshop col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/coffeestation/coffeest2.jpg" alt="coffeestation" width="250" height="180">
+                    </div>
+                    <h2>Coffee Station</h2>
+                    <h6><span>Place type:</span> Coffee Shop</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place restaurant family col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/zogal/zogal3.jpg" alt="zogal" width="250" height="180">
+                    </div>
+                    <h2>Zogal</h2>
+                    <h6><span>Place type:</span> Restaurant, Family</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place dessert family col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/lviv/lviv.jpg" alt="lviv" width="250" height="180">
+                    </div>
+                    <h2>Lviv</h2>
+                    <h6><span>Place type:</span> Dessert, Family</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place restaurant national col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/sumakh/sumakh1.jpg" alt="sumakh" width="250" height="180">
+                    </div>
+                    <h2>Sumakh</h2>
+                    <h6><span>Place type:</span> Restaurant, National</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place restaurant eastern col-lg-3 col-md-4 col-sm-6">
+                    <div class="place-image">
+                        <img src="./assets/img/Places/yukakaiten/yuka4.jpg" alt="yukaKaiten" width="250" height="180">
+                    </div>
+                    <h2>Yuka Kaiten</h2>
+                    <h6><span>Place type:</span> Restaurant, Eastern</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="margin-75"></div>
+    <!-- RESTAURANTS LIST -->
+
+
+    <!-- ALL JS HERE -->
+    <script src="./assets/styles/js/restaurants-list.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"
+        integrity="sha256-aZcT9p29I4e3w7VyBLzcPYbTrDUHGKetZaUpPg0sU+s=" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
