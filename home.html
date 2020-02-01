@@ -122,20 +122,20 @@
                 <hr>
             </div>
             <div class="category-buttons">
-                <div class="button-group place-type" data-filter-group="place">
-                    <button class="button active" data-filter="*"> All</button>
-                    <button class="button" data-filter=".cafe"> Cafe</button>
-                    <button class="button" data-filter=".restaurant"> Restaurant</button>
-                    <button class="button" data-filter=".bar"> Bar</button>
-                    <button class="button" data-filter=".coffeeshop"> Coffee Shop</button>
+                <div class="button-group place-type" id="btn-place">
+                    <button class="button active" onclick="filterSelection('all')"> All</button>
+                    <button class="button" onclick="filterSelection('cafe')"> Cafe</button>
+                    <button class="button" onclick="filterSelection('restaurant')"> Restaurant</button>
+                    <button class="button" onclick="filterSelection('bar')"> Bar</button>
+                    <button class="button" onclick="filterSelection('coffeeshop')"> Coffee Shop</button>
                 </div>
-                <div class="button-group food-type" data-filter-group="food">
-                    <button class="button active" data-filter="*"> All</button>
-                    <button class="button" data-filter=".dessert"> Dessert</button>
-                    <button class="button" data-filter=".fastfood"> Fast Food</button>
-                    <button class="button" data-filter=".family"> Family</button>
-                    <button class="button" data-filter=".national"> National</button>
-                    <button class="button" data-filter=".eastern"> Eastern</button>
+                <div class="button-group food-type" id="btn-food">
+                    <!-- <button class="button active" onclick="filterSelection('all')"> All</button> -->
+                    <button class="button" onclick="filterSelection('dessert')"> Dessert</button>
+                    <button class="button" onclick="filterSelection('fastfood')"> Fast Food</button>
+                    <button class="button" onclick="filterSelection('family')"> Family</button>
+                    <button class="button" onclick="filterSelection('national')"> National</button>
+                    <button class="button" onclick="filterSelection('eastern')"> Eastern</button>
                 </div>
             </div>
             

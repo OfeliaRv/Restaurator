@@ -18,12 +18,22 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
+    overflow: hidden;
+    z-index: 5;
+
+    .show {
+      display: flex !important;
+    }
 
     .place {
       text-align: center;
-      height: 350px;
+      height: 370px;
       color: #3e3e3e;
-      margin: 30px 0;
+      margin: 30px 10px;
+      display: none;
+      flex-direction: column;
+      border-radius: 10px;
+      box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
 
       .place-image {
         display: flex;
@@ -31,6 +41,8 @@
 
         img {
           border-radius: 10px;
+          margin: 10px;
+          box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
         }
       }
 
@@ -55,23 +67,26 @@
         height: 38px;
         width: 120px;
         border: none;
-        border-radius: 3px;
-        margin: 20px;
+        border-radius: 9px;
+        margin: 20px auto;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         font-family: "Montserrat";
+        background-color: #f9c62e;
 
         a {
           text-decoration: none;
+          color: #3e3e3e;
+          font-weight: 500;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 992px){
-  #restaurants-list{
+@media screen and (max-width: 992px) {
+  #restaurants-list {
     position: relative;
     top: 913px;
   }
