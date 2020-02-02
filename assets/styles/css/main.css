@@ -80,6 +80,16 @@ body {
   width: 460px;
 }
 
+.logo {
+  text-align: center;
+}
+
+.logo h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 51px;
+  color: yellow;
+}
+
 .background-img-container {
   z-index: 0;
   height: 800px;
@@ -117,17 +127,7 @@ body {
   margin: 20px auto;
 }
 
-.background-img-container .background-img #nav-bar .nav .nav-logo {
-  text-align: center;
-}
-
-.background-img-container .background-img #nav-bar .nav .nav-logo h1 {
-  font-family: "Sacramento", cursive;
-  font-size: 51px;
-  color: yellow;
-}
-
-.background-img-container .background-img #nav-bar .nav .nav-menu {
+.background-img-container .background-img #nav-bar .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +135,7 @@ body {
   padding: 0;
 }
 
-.background-img-container .background-img #nav-bar .nav .nav-menu ul {
+.background-img-container .background-img #nav-bar .nav-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,14 +147,14 @@ body {
   padding: 0;
 }
 
-.background-img-container .background-img #nav-bar .nav .nav-menu ul li {
+.background-img-container .background-img #nav-bar .nav-menu ul li {
   list-style-type: none;
   margin: 0px 10px;
   width: 67px;
   text-align: center;
 }
 
-.background-img-container .background-img #nav-bar .nav .nav-menu ul li a {
+.background-img-container .background-img #nav-bar .nav-menu ul li a {
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
@@ -176,6 +176,97 @@ body {
 @media screen and (max-width: 420px) {
   .nav-menu ul {
     width: 342px !important;
+  }
+}
+
+footer {
+  background-image: url(../../img/footer.jpg);
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-content .logo {
+  margin: 45px 0;
+  padding: 0;
+}
+
+footer .footer-content .footer-text {
+  text-align: center;
+  margin: 67px 15px;
+  margin-left: 106px;
+  letter-spacing: 6px;
+}
+
+footer .footer-content .footer-text h6 {
+  color: white;
+}
+
+footer .footer-content .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 0;
+  margin: 46px 0;
+}
+
+footer .footer-content .footer-menu ul {
+  padding: 0 122px;
+}
+
+footer .footer-content .footer-menu ul li {
+  list-style-type: none;
+  margin: 0 5px;
+  width: 66px;
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    position: relative;
+    top: 900px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-content .footer-text {
+    margin: 0 51px !important;
+    margin-left: 61px !important;
+  }
+  .footer-content .footer-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-content .footer-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer-content .footer-text {
+    margin: 51px !important;
+  }
+  .footer-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
   }
 }
 

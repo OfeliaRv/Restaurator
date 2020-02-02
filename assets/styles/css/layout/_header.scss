@@ -24,17 +24,7 @@
         justify-content: space-between;
         margin: 20px auto;
 
-        .nav-logo {
-          text-align: center;
-
-          h1 {
-            font-family: "Sacramento", cursive;
-            font-size: 51px;
-            color: yellow;
-          }
-        }
-
-        .nav-menu {
+        &-menu {
           display: flex;
           margin: 13px 0;
           padding: 0;
