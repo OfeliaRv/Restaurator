@@ -202,10 +202,13 @@ footer .footer-content .footer-text {
   margin: 67px 15px;
   margin-left: 106px;
   letter-spacing: 6px;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
 }
 
 footer .footer-content .footer-text h6 {
   color: white;
+  font-weight: 700;
 }
 
 footer .footer-content .footer-menu {
@@ -400,6 +403,7 @@ footer .footer-content .footer-menu ul li {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   font-size: 30px;
+  font-style: italic;
 }
 
 #restaurants-list .grid .place h6 {
