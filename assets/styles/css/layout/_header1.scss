@@ -11,7 +11,7 @@
     bottom: 110px;
     width: 100%;
 
-    #nav-bar {
+    .nav-bar {
       height: 100px;
       top: 130px;
       position: absolute;
@@ -58,19 +58,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  #nav-bar {
+  .nav-bar {
     position: fixed;
     top: 20px;
 
-    .nav-logo{
+    .nav-logo {
       text-align: left !important;
     }
   }
 }
 
-@media screen and (max-width:420px){
-  .nav-menu{
-    ul{
+@media screen and (max-width: 420px) {
+  .nav-menu {
+    ul {
       width: 342px !important;
     }
   }

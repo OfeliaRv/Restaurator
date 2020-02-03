@@ -1,0 +1,32 @@
+.authorization {
+  .authentication-form {
+    margin-top: 30px;
+    background: url(../../img/home-img/alwaysfresh.jpg);
+    background-position: center;
+
+    .form-container {
+      margin: 20px auto;
+      border: 1px solid yellow;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
+
+      form {
+        padding: 64px;
+
+        .form-btn {
+          display: flex;
+          justify-content: center;
+
+          button {
+            margin: 15px 0;
+            width: 140px;
+            background-color: #3e3e3e;
+            border: none;
+            height: 44px;
+          }
+        }
+      }
+    }
+  }
+}

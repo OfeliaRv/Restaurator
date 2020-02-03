@@ -1,0 +1,23 @@
+.authorization {
+  .background-img-container {
+    height: 335px;
+
+    .background-img {
+      background-image: url(../../img/polaroid-pics1.jpg);
+
+      .authorization-header {
+        .authorization-heading {
+          h1 {
+            color: white;
+            text-align: center;
+            font-family: "Cormorant Garamond", serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 104px;
+          }
+        }
+      }
+    }
+  }
+}
+

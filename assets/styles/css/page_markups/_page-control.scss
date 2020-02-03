@@ -2,26 +2,38 @@ body {
   margin: 0 auto;
 }
 
-.margin-75{
+.margin-75 {
   height: 75px;
 }
 
-.margin-175{
+.margin-175 {
   height: 175px;
 }
 
-.margin-465{
+.margin-300 {
+  height: 300px;
+}
+
+.margin-465 {
   height: 465px;
 }
 
-@media screen and (max-width:490px){
-  hr{
+@media screen and (max-width: 490px) {
+  hr {
     width: 390px !important;
   }
 }
 
-@media screen and (max-width:420px){
-  hr{
+@media screen and (max-width: 420px) {
+  hr {
     width: 290px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .authorization {
+    footer {
+      top: 0px !important;
+    }
   }
 }
