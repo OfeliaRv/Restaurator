@@ -1,85 +1,102 @@
 #restaurants-list {
   .category-buttons {
-    margin-top: 30px;
-    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     .button-group {
       .button {
         border-radius: 4px;
         border: none;
         margin: 5px;
-        height: 30px;
+        height: 60px;
+        width: 110px;
+
+        i{
+          color: #3e3e3e;
+        }
       }
     }
   }
 
   .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    overflow: hidden;
-    z-index: 5;
+    //   display: flex;
+    //   flex-wrap: wrap;
+    margin-top: 30px;
+    //background-color: #f8f9fa;
+    padding-top: 30px;
+    padding: 0;
 
     .show {
       display: flex !important;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .place {
       text-align: center;
-      height: 370px;
       color: #3e3e3e;
-      margin: 30px 10px;
+      margin: 50px 0;
       display: none;
-      flex-direction: column;
-      border-radius: 10px;
-      box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
+      padding: 0;
 
       .place-image {
         display: flex;
         justify-content: center;
+        border-radius: 10px;
+        box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
+        height: 500px;
+        overflow: hidden;
+        padding: 0;
 
         img {
-          border-radius: 10px;
-          margin: 10px;
-          box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
+          height: 100%;
+          width: 100%;
+          margin: auto;
         }
       }
 
-      h2 {
-        margin: 12px 0;
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 600;
-        font-size: 30px;
-        font-style: italic;
-      }
+      .place-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-      h6 {
-        font-family: "Montserrat";
-        font-style: italic;
-
-        span {
-          font-style: normal;
+        h2 {
+          margin: 12px 0;
+          font-family: "Cormorant Garamond", serif;
           font-weight: 600;
+          font-size: 70px;
+          letter-spacing: 6px;
+          font-style: italic;
         }
-      }
 
-      button {
-        height: 38px;
-        width: 120px;
-        border: none;
-        border-radius: 9px;
-        margin: 20px auto;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        font-family: "Montserrat";
-        background-color: #f9c62e;
+        h6 {
+          font-family: "Montserrat";
+          font-style: italic;
 
-        a {
-          text-decoration: none;
-          color: #3e3e3e;
-          font-weight: 500;
+          span {
+            font-style: normal;
+            font-weight: 600;
+          }
+        }
+
+        button {
+          height: 48px;
+          width: 147px;
+          border: none;
+          border-radius: 9px;
+          margin: 20px auto;
+          font-style: normal;
+          font-size: 16px;
+          font-family: "Montserrat";
+          //background-color: #f9c62e;
+          background-color: #eeba5d;
+
+          a {
+            text-decoration: none;
+            color: #3e3e3e;
+            font-weight: 500;
+          }
         }
       }
     }

@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,700,700i|Montserrat:300,400|Sacramento&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Restaurator - Home</title>
 </head>
 
@@ -49,9 +50,12 @@
                 <!-- PAGE TOP HEADING -->
 
                 <div class="top-heading">
-                    <h1 class="heading1">Lounges</h1>
-                    <h1 class="heading2">&Dinning</h1>
-                    <p class="baku">BAKU</p>
+                    <h1 class="heading1" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-in-out"
+                        data-aos-once="true">Lounges</h1>
+                    <h1 class="heading2" data-aos="fade-left" data-aos-duration="3000" data-aos-easing="ease-in-out"
+                        data-aos-once="true">&Dinning</h1>
+                    <p class="baku" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out"
+                        data-aos-once="true">BAKU</p>
                 </div>
 
                 <!-- PAGE TOP HEADING -->
@@ -73,7 +77,8 @@
                 <hr>
             </div>
             <div class="row help-options">
-                <div class="help-option col-sm-12 col-md-10 col-lg-3">
+                <div class="help-option col-sm-12 col-md-10 col-lg-3" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-easing="ease-in-out" data-aos-once="true" data-aos-anchor-placement="top-center">
                     <div class="help-image">
                         <img src="./assets/img/home-img/picture3.png" alt="img1">
                     </div>
@@ -84,7 +89,9 @@
                             Quisquam eum, odit laboriosam.</p>
                     </div>
                 </div>
-                <div class="help-option col-sm-12 col-md-10 col-lg-3">
+                <div class="help-option col-sm-12 col-md-10 col-lg-3" data-aos="fade-down" data-aos-duration="1200"
+                    data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-once="true"
+                    data-aos-anchor-placement="top-center">
                     <div class="help-image">
                         <img src="./assets/img/home-img/picture2.png" alt="img2">
                     </div>
@@ -95,7 +102,9 @@
                             Quisquam suscipit debitis laboriosam.</p>
                     </div>
                 </div>
-                <div class="help-option col-sm-12 col-md-10 col-lg-3">
+                <div class="help-option col-sm-12 col-md-10 col-lg-3" data-aos="fade-up" data-aos-delay="400"
+                    data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="true"
+                    data-aos-anchor-placement="top-center">
                     <div class="help-image">
                         <img src="./assets/img/home-img/picture1.png" alt="img3">
                     </div>
@@ -116,94 +125,117 @@
 
     <!-- RESTAURANTS LIST -->
     <section id="restaurants-list">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Any Kind Of Places For You</h1>
-                <hr>
+        <div class="section-heading">
+            <h1>Any Kind Of Places For You</h1>
+            <hr>
+        </div>
+        <div class="category-buttons">
+            <div class="button-group place-type" id="btn-place">
+                <button class="button active" onclick="filterSelection('all')"><i class="fas fa-infinity"></i><br>All</button>
+                <button class="button" onclick="filterSelection('cafe')"><i class="fas fa-utensils"></i><br>Cafe</button>
+                <button class="button" onclick="filterSelection('restaurant')"><i class="fas fa-wine-glass-alt"></i><br>Restaurant</button>
+                <button class="button" onclick="filterSelection('bar')"><i class="fas fa-cocktail"></i><br>Bar</button>
+                <button class="button" onclick="filterSelection('coffeeshop')"><i class="fas fa-coffee"></i><br>Coffee Shop</button>
             </div>
-            <div class="category-buttons">
-                <div class="button-group place-type" id="btn-place">
-                    <button class="button active" onclick="filterSelection('all')"> All</button>
-                    <button class="button" onclick="filterSelection('cafe')"> Cafe</button>
-                    <button class="button" onclick="filterSelection('restaurant')"> Restaurant</button>
-                    <button class="button" onclick="filterSelection('bar')"> Bar</button>
-                    <button class="button" onclick="filterSelection('coffeeshop')"> Coffee Shop</button>
-                </div>
-                <div class="button-group food-type" id="btn-food">
-                    <!-- <button class="button active" onclick="filterSelection('all')"> All</button> -->
-                    <button class="button" onclick="filterSelection('dessert')"> Dessert</button>
-                    <button class="button" onclick="filterSelection('fastfood')"> Fast Food</button>
-                    <button class="button" onclick="filterSelection('family')"> Family</button>
-                    <button class="button" onclick="filterSelection('national')"> National</button>
-                    <button class="button" onclick="filterSelection('eastern')"> Eastern</button>
-                </div>
+            <div class="button-group food-type" id="btn-food">
+                <button class="button" onclick="filterSelection('dessert')"><i class="fas fa-ice-cream"></i><br> Dessert</button>
+                <button class="button" onclick="filterSelection('fastfood')"><i class="fas fa-hamburger"></i><br> Food</button>
+                <button class="button" onclick="filterSelection('family')"><i class="fas fa-user-friends"></i><br>Family</button>
+                <button class="button" onclick="filterSelection('national')"><i class="fas fa-drumstick-bite"></i><br> National</button>
+                <button class="button" onclick="filterSelection('eastern')"><i class="fas fa-pepper-hot"></i><br> Eastern</button>
             </div>
+        </div>
 
-            <div class="grid">
-                <div class="place family cafe col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/cafecity/cafecity1.jpg" alt="cafecity" width="250" height="180">
-                    </div>
+        <div class="grid col-lg-12">
+            <div class="place family cafe col-lg-12 col-md-6 col-sm-6">
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/cafecity/cafecity1.jpg" alt="cafecity"
+                        style="filter: brightness(0.9)">
+                </div>
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
                     <h2>CafeCity</h2>
                     <h6><span>Place type:</span> Cafe, Family</h6>
                     <button><a href="#">See More...</a></button>
                 </div>
-                <div class="place bar restaurant col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/mayamexican/maya2.jpg" alt="mayamexican" width="250" height="180">
-                    </div>
+            </div>
+            <div class="place bar restaurant col-lg-12 col-md-6 col-sm-6">
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
                     <h2>Maya Mexican</h2>
                     <h6><span>Place type:</span> Restaurant, Bar</h6>
                     <button><a href="#">See More...</a></button>
                 </div>
-                <div class="place fastfood family col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/fryday/fryday3.jpg" alt="fryday" width="250" height="180">
-                    </div>
-                    <h2>Fryday</h2>
-                    <h6><span>Place type:</span> Fastfood, Family</h6>
-                    <button><a href="#">See More...</a></button>
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/mayamexican/maya-main.jpg" alt="mayamexican" style="width:auto">
                 </div>
-                <div class="place coffeeshop col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/coffeestation/coffeest2.jpg" alt="coffeestation" width="250"
-                            height="180">
-                    </div>
+            </div>
+            <div class="place coffeeshop col-lg-12 col-md-6 col-sm-6">
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/coffeestation/coffeest2.jpg" alt="coffeestation">
+                </div>
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
                     <h2>Coffee Station</h2>
                     <h6><span>Place type:</span> Coffee Shop</h6>
                     <button><a href="#">See More...</a></button>
                 </div>
-                <div class="place restaurant family col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/zogal/zogal3.jpg" alt="zogal" width="250" height="180">
-                    </div>
+            </div>
+            <div class="place fastfood family col-lg-12 col-md-6 col-sm-6">
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                    <h2>Fryday</h2>
+                    <h6><span>Place type:</span> Fastfood, Family</h6>
+                    <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/fryday/fryday3.jpg" alt="fryday">
+                </div>
+            </div>
+            <div class="place restaurant family col-lg-12 col-md-6 col-sm-6">
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/zogal/zogal3.jpg" alt="zogal">
+                </div>
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
                     <h2>Zogal</h2>
                     <h6><span>Place type:</span> Restaurant, Family</h6>
                     <button><a href="#">See More...</a></button>
                 </div>
-                <div class="place dessert family col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/lviv/lviv.jpg" alt="lviv" width="250" height="180">
-                    </div>
-                    <h2>Lviv</h2>
-                    <h6><span>Place type:</span> Dessert, Family</h6>
+            </div>
+            <div class="place restaurant eastern col-lg-12 col-md-6 col-sm-6">
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                    <h2>Yuka Kaiten</h2>
+                    <h6><span>Place type:</span> Restaurant, Eastern</h6>
                     <button><a href="#">See More...</a></button>
                 </div>
-                <div class="place restaurant national col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/sumakh/sumakh1.jpg" alt="sumakh" width="250" height="180">
-                    </div>
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/yukakaiten/yuka-main1.jpg" alt="yukaKaiten">
+                </div>
+            </div>
+            <div class="place restaurant national col-lg-12 col-md-6 col-sm-6">
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/sumakh/sumakh1.jpg" alt="sumakh">
+                </div>
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
                     <h2>Sumakh</h2>
                     <h6><span>Place type:</span> Restaurant, National</h6>
                     <button><a href="#">See More...</a></button>
                 </div>
-                <div class="place restaurant eastern col-lg-3 col-md-6 col-sm-6">
-                    <div class="place-image">
-                        <img src="./assets/img/Places/yukakaiten/yuka4.jpg" alt="yukaKaiten" width="250" height="180">
-                    </div>
-                    <h2>Yuka Kaiten</h2>
-                    <h6><span>Place type:</span> Restaurant, Eastern</h6>
+            </div>
+            <div class="place dessert family col-lg-12 col-md-6 col-sm-6">
+                <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                    <h2>Lviv</h2>
+                    <h6><span>Place type:</span> Dessert, Family</h6>
                     <button><a href="#">See More...</a></button>
+                </div>
+                <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <img src="./assets/img/Places/lviv/lviv-main1.jpg" alt="lviv" style="bottom: 64px;
+                    height: 133%;
+                    position: relative;">
                 </div>
             </div>
         </div>
@@ -235,6 +267,11 @@
 
     <!-- ALL JS HERE -->
     <script src="./assets/styles/js/restaurants-list.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/567fa52ff0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
