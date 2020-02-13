@@ -1,19 +1,24 @@
+#homepage {
+  &-content {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
 .background-img-container {
   z-index: 0;
-  height: 800px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 
   .background-img {
     position: relative;
-    height: 1000px;
+    height: 100%;
     z-index: -1;
-    bottom: 110px;
     width: 100%;
 
     .nav-bar {
       height: 100px;
-      top: 130px;
       position: absolute;
       width: 100%;
       z-index: 5;
