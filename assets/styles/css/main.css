@@ -180,6 +180,10 @@ body {
   color: #fff;
 }
 
+.background-img-container .background-img .nav-bar .nav-menu ul li a:hover {
+  color: #e2b948;
+}
+
 @media screen and (min-width: 768px) {
   .nav-bar {
     position: fixed;
@@ -202,6 +206,14 @@ body {
 
 .authorization .background-img-container .background-img {
   background-image: url(../../img/polaroid-pics1.jpg);
+}
+
+.authorization .background-img-container .background-img .authorization-header .authorization-heading {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .authorization .background-img-container .background-img .authorization-header .authorization-heading h1 {

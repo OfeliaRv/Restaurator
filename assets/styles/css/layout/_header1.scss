@@ -53,6 +53,10 @@
                 font-family: "Montserrat";
                 line-height: 40px;
                 color: #fff;
+
+                &:hover{
+                  color: rgb(226, 185, 72);
+                }
               }
             }
           }
