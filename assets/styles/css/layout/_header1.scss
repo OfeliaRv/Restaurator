@@ -42,8 +42,7 @@
 
             li {
               list-style-type: none;
-              margin: 0px 10px;
-              width: 67px;
+              width: auto;
               text-align: center;
 
               a {
@@ -53,6 +52,7 @@
                 font-family: "Montserrat";
                 line-height: 40px;
                 color: #fff;
+                margin: 0px 10px;
 
                 &:hover{
                   color: rgb(226, 185, 72);

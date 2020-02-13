@@ -166,8 +166,7 @@ body {
 
 .background-img-container .background-img .nav-bar .nav-menu ul li {
   list-style-type: none;
-  margin: 0px 10px;
-  width: 67px;
+  width: auto;
   text-align: center;
 }
 
@@ -178,6 +177,7 @@ body {
   font-family: "Montserrat";
   line-height: 40px;
   color: #fff;
+  margin: 0px 10px;
 }
 
 .background-img-container .background-img .nav-bar .nav-menu ul li a:hover {
@@ -544,5 +544,54 @@ footer .footer-content .footer-menu ul li {
   background-color: #3e3e3e;
   border: none;
   height: 44px;
+}
+
+#cafecity-top .background-img-container .background-img {
+  background-image: url(../../img/Places/cafecity/cafecity-background1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#maya-top .background-img-container .background-img {
+  background-image: url(../../img/Places/mayamexican/maya-background1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#zogal-top .background-img-container .background-img {
+  background-image: url(../../img/Places/zogal/zogal-background1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#yuka-top .background-img-container .background-img {
+  background-image: url(../../img/Places/yukakaiten/yuka-main-b.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#lviv-top .background-img-container .background-img {
+  background-image: url(../../img/Places/lviv/lviv-background2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#fryday-top .background-img-container .background-img {
+  background-image: url(../../img/Places/fryday/fryday-background1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#coffeest-top .background-img-container .background-img {
+  background-image: url(../../img/Places/coffeestation/coffeest-background1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#sumakh-top .background-img-container .background-img {
+  background-image: url(../../img/Places/sumakh/sumakh-background1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 /*# sourceMappingURL=main.css.map */
