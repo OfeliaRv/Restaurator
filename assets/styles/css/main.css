@@ -162,6 +162,88 @@ body {
   }
 }
 
+.grid {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding: 0;
+}
+
+.grid .show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grid .place {
+  text-align: center;
+  color: #3e3e3e;
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.grid .place .place-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
+          box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
+  height: 500px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.grid .place .place-image img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  -webkit-filter: saturate(0.7);
+          filter: saturate(0.7);
+}
+
+.grid .place .place-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid .place .place-info h2 {
+  margin: 12px 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 70px;
+  letter-spacing: 6px;
+  font-style: italic;
+}
+
+.grid .place .place-info h6 {
+  font-family: "Montserrat";
+  font-style: italic;
+}
+
+.grid .place .place-info h6 span {
+  font-style: normal;
+  font-weight: 600;
+}
+
 #homepage-content {
   position: relative;
   overflow: hidden;
@@ -417,12 +499,6 @@ footer .footer-content .footer-menu ul li {
   color: #3e3e3e;
 }
 
-#restaurants-list .grid {
-  margin-top: 30px;
-  padding-top: 30px;
-  padding: 0;
-}
-
 #restaurants-list .grid .show {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -435,69 +511,10 @@ footer .footer-content .footer-menu ul li {
 }
 
 #restaurants-list .grid .place {
-  text-align: center;
-  color: #3e3e3e;
-  margin: 50px 0;
   display: none;
-  padding: 0;
 }
 
-#restaurants-list .grid .place .place-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 10px;
-  -webkit-box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
-          box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
-  height: 500px;
-  overflow: hidden;
-  padding: 0;
-}
-
-#restaurants-list .grid .place .place-image img {
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  -webkit-filter: saturate(0.7);
-          filter: saturate(0.7);
-}
-
-#restaurants-list .grid .place .place-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#restaurants-list .grid .place .place-info h2 {
-  margin: 12px 0;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  font-size: 70px;
-  letter-spacing: 6px;
-  font-style: italic;
-}
-
-#restaurants-list .grid .place .place-info h6 {
-  font-family: "Montserrat";
-  font-style: italic;
-}
-
-#restaurants-list .grid .place .place-info h6 span {
-  font-style: normal;
-  font-weight: 600;
-}
-
-#restaurants-list .grid .place .place-info button {
+#restaurants-list .grid .place button {
   height: 48px;
   width: 147px;
   border: none;
@@ -509,7 +526,7 @@ footer .footer-content .footer-menu ul li {
   background-color: #eeba5d;
 }
 
-#restaurants-list .grid .place .place-info button a {
+#restaurants-list .grid .place button a {
   text-decoration: none;
   color: #3e3e3e;
   font-weight: 500;
