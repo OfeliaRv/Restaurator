@@ -104,6 +104,64 @@ body {
   color: yellow;
 }
 
+.three-circles-withpic {
+  background: url(../../img/home-img/alwaysfresh.jpg);
+  height: 600px;
+  background-position: center;
+}
+
+.three-circles-withpic .circles-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.three-circles-withpic .circles-options .circles-option {
+  margin: 10px 30px;
+}
+
+.three-circles-withpic .circles-options .circles-option .circles-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.three-circles-withpic .circles-options .circles-option .circles-text {
+  font-weight: 300;
+  text-align: center;
+}
+
+.three-circles-withpic .circles-options .circles-option .circles-text h1 {
+  font-family: "Cormorant Garamond";
+  font-size: 36px;
+  font-style: italic;
+}
+
+.three-circles-withpic .circles-options .circles-option .circles-text h1 span {
+  font-weight: 700;
+}
+
+.three-circles-withpic .circles-options .circles-option .circles-text p {
+  font-family: "Montserrat";
+  color: #646464;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .three-circles-withpic {
+    background: none;
+  }
+}
+
 #homepage-content {
   position: relative;
   overflow: hidden;
@@ -129,7 +187,7 @@ body {
 
 .background-img-container .background-img .nav-bar {
   height: 100px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 5;
 }
@@ -201,6 +259,12 @@ body {
 @media screen and (max-width: 420px) {
   .nav-menu ul {
     width: 342px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background-img-container .background-img {
+    background-size: auto !important;
   }
 }
 
@@ -326,64 +390,6 @@ footer .footer-content .footer-menu ul li {
 
 #homepage-top .background-img-container .background-img {
   background-image: url(../../img/home-img/background-slider.jpg);
-}
-
-#how-we-help {
-  background: url(../../img/home-img/alwaysfresh.jpg);
-  height: 600px;
-  background-position: center;
-}
-
-#how-we-help .help-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#how-we-help .help-options .help-option {
-  margin: 10px 30px;
-}
-
-#how-we-help .help-options .help-option .help-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#how-we-help .help-options .help-option .help-text {
-  font-weight: 300;
-  text-align: center;
-}
-
-#how-we-help .help-options .help-option .help-text h1 {
-  font-family: "Cormorant Garamond";
-  font-size: 36px;
-  font-style: italic;
-}
-
-#how-we-help .help-options .help-option .help-text h1 span {
-  font-weight: 700;
-}
-
-#how-we-help .help-options .help-option .help-text p {
-  font-family: "Montserrat";
-  color: #646464;
-  font-size: 14px;
-}
-
-@media screen and (max-width: 992px) {
-  #how-we-help {
-    background: none;
-  }
 }
 
 #restaurants-list .category-buttons {

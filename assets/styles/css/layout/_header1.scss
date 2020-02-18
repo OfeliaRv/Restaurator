@@ -17,13 +17,13 @@
     z-index: -1;
     width: 100%;
 
-    .nav-scrolled{
+    .nav-scrolled {
       background-color: red;
     }
-    
+
     .nav-bar {
       height: 100px;
-      position: fixed;
+      position: absolute;
       width: 100%;
       z-index: 5;
 
@@ -58,7 +58,7 @@
                 color: #fff;
                 margin: 0px 10px;
 
-                &:hover{
+                &:hover {
                   color: rgb(226, 185, 72);
                 }
               }
@@ -85,6 +85,14 @@
   .nav-menu {
     ul {
       width: 342px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background-img-container {
+    .background-img {
+      background-size: auto !important;
     }
   }
 }

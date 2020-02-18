@@ -1,23 +1,23 @@
-#how-we-help {
+.three-circles-withpic {
   background: url(../../img/home-img/alwaysfresh.jpg);
   height: 600px;
   background-position: center;
 
-  .help-options {
+  .circles-options {
     display: flex;
     justify-content: center;
     margin-top: 40px;
     flex-wrap: wrap;
 
-    .help-option {
+    .circles-option {
       margin: 10px 30px;
 
-      .help-image {
+      .circles-image {
         display: flex;
         justify-content: center;
       }
 
-      .help-text {
+      .circles-text {
         font-weight: 300;
         text-align: center;
 
@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  #how-we-help {
+  .three-circles-withpic {
     background: none;
   }
 }
