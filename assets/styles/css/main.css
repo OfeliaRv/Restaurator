@@ -123,9 +123,13 @@ body {
   width: 100%;
 }
 
+.background-img-container .background-img .nav-scrolled {
+  background-color: red;
+}
+
 .background-img-container .background-img .nav-bar {
   height: 100px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 5;
 }
@@ -451,6 +455,8 @@ footer .footer-content .footer-menu ul li {
   height: 100%;
   width: 100%;
   margin: auto;
+  -webkit-filter: saturate(0.7);
+          filter: saturate(0.7);
 }
 
 #restaurants-list .grid .place .place-info {
@@ -546,11 +552,10 @@ footer .footer-content .footer-menu ul li {
   height: 44px;
 }
 
-#cafecity-top .background-img-container .background-img {
-  background-image: url(../../img/Places/cafecity/cafecity-background1.jpg);
+#malacannes-top .background-img-container .background-img {
+  background-image: url(../../img/Places/malacannes/malacannes-background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #maya-top .background-img-container .background-img {
@@ -559,8 +564,8 @@ footer .footer-content .footer-menu ul li {
   background-size: 100%;
 }
 
-#zogal-top .background-img-container .background-img {
-  background-image: url(../../img/Places/zogal/zogal-background1.jpg);
+#lavenue-top .background-img-container .background-img {
+  background-image: url(../../img/Places/lavenue/lavenue-background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -577,10 +582,11 @@ footer .footer-content .footer-menu ul li {
   background-size: 100%;
 }
 
-#fryday-top .background-img-container .background-img {
-  background-image: url(../../img/Places/fryday/fryday-background1.jpg);
+#marivanna-top .background-img-container .background-img {
+  background-image: url(../../img/Places/marivanna/marivanna-background1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
 }
 
 #coffeest-top .background-img-container .background-img {
