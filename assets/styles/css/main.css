@@ -541,6 +541,16 @@ footer .footer-content .footer-menu ul li {
   padding: 64px;
 }
 
+.authorization .authentication-form .form-container form h5 {
+  font-family: "Cormorant Garamond";
+  font-size: 35px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  color: orange;
+  margin-bottom: 36px;
+}
+
 .authorization .authentication-form .form-container form .form-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,6 +566,15 @@ footer .footer-content .footer-menu ul li {
   background-color: #3e3e3e;
   border: none;
   height: 44px;
+}
+
+.authorization .authentication-form .form-container form .form-text {
+  margin: 28px auto;
+  text-align: center;
+}
+
+.authorization .authentication-form .form-container form .form-text a {
+  color: orange;
 }
 
 #malacannes-top .background-img-container .background-img {
