@@ -15,7 +15,6 @@
                 border: 1px solid lightsalmon;
                 background-color: white;
                 position: relative;
-                //position: absolute !important;
                 top: -293px;
                 box-shadow: 0px 6px 61px 12px rgba(207, 174, 118, 1);
                 .menu-icon {
@@ -56,6 +55,11 @@
                                 background-color: #fff;
                                 height: 1px;
                                 width: 100%;
+                            }
+                            .dish-text {
+                                font-size: 19px;
+                                font-family: "Cormorant Garamond";
+                                font-style: italic
                             }
                         }
                     }
