@@ -249,29 +249,34 @@ body {
   height: 465px;
 }
 
-.menu-card-container {
+.menu-card .container {
+  height: 440px;
+}
+
+.menu-card .container .menu-card-container {
   z-index: 2;
   margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
+  height: 615px;
   border: 1px solid lightsalmon;
   background-color: white;
-  position: absolute !important;
+  position: relative;
   top: -293px;
   -webkit-box-shadow: 0px 6px 61px 12px #cfae76;
           box-shadow: 0px 6px 61px 12px #cfae76;
 }
 
-.menu-card-container .menu-icon {
+.menu-card .container .menu-card-container .menu-icon {
   margin: 15px auto;
   padding: 0;
 }
 
-.menu-card-container .menu-icon img {
+.menu-card .container .menu-card-container .menu-icon img {
   width: 100%;
 }
 
-.menu-card-container .menu-content {
+.menu-card .container .menu-card-container .menu-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,12 +287,12 @@ body {
   padding: 12px;
 }
 
-.menu-card-container .menu-content .menu-column .menu-item {
+.menu-card .container .menu-card-container .menu-content .menu-column .menu-item {
   padding: 20px;
   margin: 40px 0;
 }
 
-.menu-card-container .menu-content .menu-column .menu-item .dish-heading {
+.menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,7 +301,7 @@ body {
           justify-content: space-between;
 }
 
-.menu-card-container .menu-content .menu-column .menu-item .dish-heading h2 {
+.menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading h2 {
   font-family: "Montserrat";
   color: #646464;
   font-weight: 300;
@@ -304,12 +309,12 @@ body {
   margin: 0;
 }
 
-.menu-card-container .menu-content .menu-column .menu-item .dish-heading .price {
+.menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading .price {
   font-size: 17px;
   font-weight: 600;
 }
 
-.menu-card-container .menu-content .menu-column .menu-item hr {
+.menu-card .container .menu-card-container .menu-content .menu-column .menu-item hr {
   border: none;
   border-top: 1px dotted #eee;
   color: #fff;

@@ -3,54 +3,61 @@
         height: 465px;
     }
     
-    .menu-card-container {
-        z-index: 2;
-        margin: 0 auto;
-        padding: 10px;
-        border-radius: 10px;
-        border: 1px solid lightsalmon;
-        background-color: white;
-        position: absolute !important;
-        top: -293px;
-        box-shadow: 0px 6px 61px 12px rgba(207, 174, 118, 1);
-        .menu-icon {
-            margin: 15px auto;
-            padding: 0;
-            img {
-                width: 100%;
-            }
-        }
-        .menu-content {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-            padding: 12px;
-            .menu-column {
-                .menu-item {
-                    padding: 20px;
-                    margin: 40px 0;
-                    .dish-heading {
-                        display: flex;
-                        justify-content: space-between;
-                        h2 {
-                            font-family: "Montserrat";
-                            color: #646464;
-                            font-weight: 300;
-                            font-size: 26px;
-                            margin: 0;
-                        }
-                        .price {
-                            font-size: 17px;
-                            font-weight: 600;
-                        }
-                    }
-                    hr {
-                        border: none;
-                        border-top: 1px dotted #eee;
-                        color: #fff;
-                        background-color: #fff;
-                        height: 1px;
+    .menu-card {
+        .container {
+            height: 440px;
+            .menu-card-container {
+                z-index: 2;
+                margin: 0 auto;
+                padding: 10px;
+                border-radius: 10px;
+                height: 615px;
+                border: 1px solid lightsalmon;
+                background-color: white;
+                position: relative;
+                //position: absolute !important;
+                top: -293px;
+                box-shadow: 0px 6px 61px 12px rgba(207, 174, 118, 1);
+                .menu-icon {
+                    margin: 15px auto;
+                    padding: 0;
+                    img {
                         width: 100%;
+                    }
+                }
+                .menu-content {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    padding: 12px;
+                    .menu-column {
+                        .menu-item {
+                            padding: 20px;
+                            margin: 40px 0;
+                            .dish-heading {
+                                display: flex;
+                                justify-content: space-between;
+                                h2 {
+                                    font-family: "Montserrat";
+                                    color: #646464;
+                                    font-weight: 300;
+                                    font-size: 26px;
+                                    margin: 0;
+                                }
+                                .price {
+                                    font-size: 17px;
+                                    font-weight: 600;
+                                }
+                            }
+                            hr {
+                                border: none;
+                                border-top: 1px dotted #eee;
+                                color: #fff;
+                                background-color: #fff;
+                                height: 1px;
+                                width: 100%;
+                            }
+                        }
                     }
                 }
             }
