@@ -1,24 +1,29 @@
 .best-dishes {
   .background-up {
-    background: url(../../img/polaroid-pics1.jpg);
-    height: 465px;
+    background: url(../../img/collage-01.jpg);
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -246px;
   }
-  
+
   .menu-card {
+    height: 0;
+
     .container {
       height: 440px;
 
       .menu-card-container {
         z-index: 2;
         margin: 0 auto;
-        padding: 10px;
+        padding: 16px;
         border-radius: 10px;
-        height: 615px;
-        border: 1px solid lightsalmon;
+        height: 646px;
+        //border: 1px solid lightsalmon;
         background-color: white;
         position: relative;
-        top: -293px;
-        box-shadow: 0px 6px 61px 12px rgba(207, 174, 118, 1);
+        bottom: 1244px;
+        //box-shadow: 0px 6px 61px 12px rgba(207, 174, 118, 1);
 
         .menu-icon {
           margin: 15px auto;

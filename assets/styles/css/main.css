@@ -269,8 +269,15 @@ option {
 }
 
 .best-dishes .background-up {
-  background: url(../../img/polaroid-pics1.jpg);
-  height: 465px;
+  background: url(../../img/collage-01.jpg);
+  height: 1500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -246px;
+}
+
+.best-dishes .menu-card {
+  height: 0;
 }
 
 .best-dishes .menu-card .container {
@@ -280,15 +287,12 @@ option {
 .best-dishes .menu-card .container .menu-card-container {
   z-index: 2;
   margin: 0 auto;
-  padding: 10px;
+  padding: 16px;
   border-radius: 10px;
-  height: 615px;
-  border: 1px solid lightsalmon;
+  height: 646px;
   background-color: white;
   position: relative;
-  top: -293px;
-  -webkit-box-shadow: 0px 6px 61px 12px #cfae76;
-          box-shadow: 0px 6px 61px 12px #cfae76;
+  bottom: 1244px;
 }
 
 .best-dishes .menu-card .container .menu-card-container .menu-icon {
@@ -493,6 +497,7 @@ option {
   background-image: url(../../img/lenta.png);
   background-size: 47%;
   background-repeat: no-repeat;
+  margin: 40px 0;
 }
 
 .rating-stars .stars {
@@ -512,7 +517,7 @@ option {
 .reservation .background-up {
   background-position: center;
   height: 763px;
-  background: url(../../img/background-cards.jpg);
+  background: url(../../img/pies.jpg);
 }
 
 .reservation-card {
@@ -526,10 +531,7 @@ option {
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
-  border: 1px solid lightsalmon;
   padding: 20px;
-  -webkit-box-shadow: 0px 6px 61px 12px #cfae76;
-          box-shadow: 0px 6px 61px 12px #cfae76;
 }
 
 .reservation-card-container .section-heading {
