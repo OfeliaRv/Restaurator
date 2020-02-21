@@ -42,7 +42,11 @@ body {
   }
 }
 
-textarea {
+input[type="time"],
+input[type="date"],
+textarea,
+select,
+option {
   font-family: "Cormorant Garamond";
 }
 
@@ -264,16 +268,16 @@ textarea {
   font-weight: 600;
 }
 
-.background-up {
+.best-dishes .background-up {
   background: url(../../img/polaroid-pics1.jpg);
   height: 465px;
 }
 
-.menu-card .container {
+.best-dishes .menu-card .container {
   height: 440px;
 }
 
-.menu-card .container .menu-card-container {
+.best-dishes .menu-card .container .menu-card-container {
   z-index: 2;
   margin: 0 auto;
   padding: 10px;
@@ -287,16 +291,16 @@ textarea {
           box-shadow: 0px 6px 61px 12px #cfae76;
 }
 
-.menu-card .container .menu-card-container .menu-icon {
+.best-dishes .menu-card .container .menu-card-container .menu-icon {
   margin: 15px auto;
   padding: 0;
 }
 
-.menu-card .container .menu-card-container .menu-icon img {
+.best-dishes .menu-card .container .menu-card-container .menu-icon img {
   width: 100%;
 }
 
-.menu-card .container .menu-card-container .menu-content {
+.best-dishes .menu-card .container .menu-card-container .menu-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,12 +311,12 @@ textarea {
   padding: 12px;
 }
 
-.menu-card .container .menu-card-container .menu-content .menu-column .menu-item {
+.best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item {
   padding: 20px;
   margin: 40px 0;
 }
 
-.menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading {
+.best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +325,7 @@ textarea {
           justify-content: space-between;
 }
 
-.menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading h2 {
+.best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading h2 {
   font-family: "Montserrat";
   color: #646464;
   font-weight: 300;
@@ -329,12 +333,12 @@ textarea {
   margin: 0;
 }
 
-.menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading .price {
+.best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-heading .price {
   font-size: 17px;
   font-weight: 600;
 }
 
-.menu-card .container .menu-card-container .menu-content .menu-column .menu-item hr {
+.best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item hr {
   border: none;
   border-top: 1px dotted #eee;
   color: #fff;
@@ -343,7 +347,7 @@ textarea {
   width: 100%;
 }
 
-.menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-text {
+.best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-text {
   font-size: 19px;
   font-family: "Cormorant Garamond";
   font-style: italic;
@@ -499,6 +503,95 @@ textarea {
 .rating-stars span {
   margin: 0 10px;
   font-size: 60px;
+}
+
+.reservation {
+  height: 763px;
+}
+
+.reservation .background-up {
+  background-position: center;
+  height: 763px;
+  background: url(../../img/background-cards.jpg);
+}
+
+.reservation-card {
+  z-index: 2;
+  position: relative;
+  bottom: 617px;
+}
+
+.reservation-card-container {
+  height: 510px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightsalmon;
+  padding: 20px;
+  -webkit-box-shadow: 0px 6px 61px 12px #cfae76;
+          box-shadow: 0px 6px 61px 12px #cfae76;
+}
+
+.reservation-card-container .section-heading {
+  margin: 10px 0;
+}
+
+.reservation-card-container .reservation-content {
+  margin: 33px 0;
+}
+
+.reservation-card-container .reservation-content .reservation-form {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reservation-card-container .reservation-content .reservation-form .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+
+.reservation-card-container .reservation-content .reservation-form .form-row input,
+.reservation-card-container .reservation-content .reservation-form .form-row select {
+  margin: 0 5px;
+  height: 70px;
+  border: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.reservation-card-container .reservation-content .reservation-form #row1 input {
+  width: 45%;
+}
+
+.reservation-card-container .reservation-content .reservation-form #row2 input,
+.reservation-card-container .reservation-content .reservation-form #row2 select {
+  width: 29%;
+  color: #7d868e;
+  font-family: "Cormorant Garamond";
+}
+
+.reservation-card-container .reservation-content .reservation-form button {
+  height: 43px;
+  margin: 55px auto;
+  border-radius: 5px;
+  border: none;
+  color: orange;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 #homepage-content {

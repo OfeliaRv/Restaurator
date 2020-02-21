@@ -1,82 +1,94 @@
 .comments-section {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: space-between;
-    .comment {
-        box-shadow: 0px 2px 20px -4px rgba(210, 177, 15, 0.56);
-        border-radius: 10px;
-        margin: 15px;
-        padding: 20px;
-        width: 47%;
-        .user-texts {
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            .upperpart-texts {
-                display: flex;
-                justify-content: space-between;
-                .username {
-                    font-size: 21px;
-                    font-family: "Cormorant Garamond";
-                }
-            }
-            .lowerpart-texts {
-                p {
-                    font-size: 19px;
-                    font-family: "Cormorant Garamond";
-                    font-style: italic
-                }
-            }
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  .comment {
+    box-shadow: 0px 2px 20px -4px rgba(210, 177, 15, 0.56);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 47%;
+
+    .user-texts {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .upperpart-texts {
+        display: flex;
+        justify-content: space-between;
+
+        .username {
+          font-size: 21px;
+          font-family: "Cormorant Garamond";
         }
+      }
+
+      .lowerpart-texts {
+        p {
+          font-size: 19px;
+          font-family: "Cormorant Garamond";
+          font-style: italic;
+        }
+      }
     }
+  }
 }
 
 .add-comment-section {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    .add-comment {
-        border-radius: 10px;
-        box-shadow: 0px 2px 20px -4px rgba(210, 177, 15, 0.56);
-        padding: 15px 25px 0 25px;
-        h5 {
-            margin: 20px 0;
-            font-family: "Montserrat";
-            font-size: 17px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            margin: 20px 0;
-            textarea {
-                border: 0.5px solid #eee;
-                resize: none;
-                height: 150px;
-                font-family: "Cormorant Garamond";
-            }
-            .comment-btns {
-                display: flex;
-                justify-content: space-between;
-                .stars {
-                    span {
-                        margin: 2px !important;
-                        font-size: 28px;
-                    }
-                }
-                button {
-                    width: 140px;
-                    height: 40px;
-                    margin: 13px 0;
-                    border-radius: 5px;
-                    border: none;
-                    color: white;
-                    background-color: orange;
-                    font-family: "Montserrat";
-                    font-size: 13px;
-                    font-weight: 700;
-                }
-            }
-        }
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .add-comment {
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px -4px rgba(210, 177, 15, 0.56);
+    padding: 15px 25px 0 25px;
+
+    h5 {
+      margin: 20px 0;
+      font-family: "Montserrat";
+      font-size: 17px;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+
+      textarea {
+        border: 0.5px solid #eee;
+        resize: none;
+        height: 150px;
+        font-family: "Cormorant Garamond";
+      }
+
+      .comment-btns {
+        display: flex;
+        justify-content: space-between;
+
+        .stars {
+          span {
+            margin: 2px !important;
+            font-size: 28px;
+          }
+        }
+
+        button {
+          width: 140px;
+          height: 40px;
+          margin: 13px 0;
+          border-radius: 5px;
+          border: none;
+          color: white;
+          background-color: orange;
+          font-family: "Montserrat";
+          font-size: 13px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }

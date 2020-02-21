@@ -1,59 +1,39 @@
 body {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .margin-75 {
-    height: 75px;
+  height: 75px;
 }
 
 .margin-175 {
-    height: 175px;
+  height: 175px;
 }
 
 .margin-300 {
-    height: 300px;
+  height: 300px;
 }
 
 .margin-465 {
-    height: 465px;
+  height: 465px;
 }
 
 @media screen and (max-width: 490px) {
-    hr {
-        width: 390px !important;
-    }
+  hr {
+    width: 390px !important;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    hr {
-        width: 290px !important;
-    }
+  hr {
+    width: 290px !important;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .authorization {
-        footer {
-            top: 0px !important;
-        }
+  .authorization {
+    footer {
+      top: 0px !important;
     }
-}
-
-textarea {
-    font-family: "Cormorant Garamond";
-}
-
-::-webkit-input-placeholder {
-    font-family: "Cormorant Garamond";
-}
-
-:-moz-placeholder {
-    font-family: "Cormorant Garamond";
-}
-
-::-moz-placeholder {
-    font-family: "Cormorant Garamond";
-}
-
-:-ms-input-placeholder {
-    font-family: "Cormorant Garamond";
+  }
 }

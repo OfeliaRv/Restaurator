@@ -1,24 +1,27 @@
 .stars {
-    display: flex;
-    justify-content: center;
-    margin: 5px 0;
-    span {
-        margin: 0 2px;
-    }
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+
+  span {
+    margin: 0 2px;
+  }
 }
 
 .rating-stars {
-    height: 244px;
-    background-position: bottom;
-    background-image: url(../../img/lenta.png);
-    background-size: 47%;
-    background-repeat: no-repeat;
-    .stars {
-        margin: 20px 0;
-        padding: 18px;
-    }
-    span {
-        margin: 0 10px;
-        font-size: 60px;
-    }
+  height: 244px;
+  background-position: bottom;
+  background-image: url(../../img/lenta.png);
+  background-size: 47%;
+  background-repeat: no-repeat;
+
+  .stars {
+    margin: 20px 0;
+    padding: 18px;
+  }
+
+  span {
+    margin: 0 10px;
+    font-size: 60px;
+  }
 }

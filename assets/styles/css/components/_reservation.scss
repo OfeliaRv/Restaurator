@@ -1,0 +1,82 @@
+.reservation {
+  height: 763px;
+
+  .background-up {
+    background-position: center;
+    height: 763px;
+    background: url(../../img/background-cards.jpg);
+  }
+
+  &-card {
+    z-index: 2;
+    position: relative;
+    bottom: 617px;
+
+    &-container {
+      height: 510px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      border: 1px solid lightsalmon;
+      padding: 20px;
+      box-shadow: 0px 6px 61px 12px #cfae76;
+
+      .section-heading {
+        margin: 10px 0;
+      }
+
+      .reservation-content {
+        margin: 33px 0;
+
+        .reservation-form {
+          margin: 0 auto;
+          display: flex;
+          padding: 0;
+          flex-direction: column;
+
+          .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+
+            input,
+            select {
+              margin: 0 5px;
+              height: 70px;
+              border: 0;
+              border-bottom: 1px solid #eee;
+            }
+          }
+
+          #row1 {
+            input {
+              width: 45%;
+            }
+          }
+
+          #row2 {
+            input,
+            select {
+              width: 29%;
+              color: #7d868e;
+              font-family: "Cormorant Garamond";
+            }
+          }
+
+          button {
+            height: 43px;
+            margin: 55px auto;
+            border-radius: 5px;
+            border: none;
+            color: orange;
+            background-color: transparent;
+            font-family: "Montserrat";
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
