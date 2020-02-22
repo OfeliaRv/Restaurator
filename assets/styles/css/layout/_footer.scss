@@ -6,14 +6,15 @@ footer {
     justify-content: space-between;
 
     .logo {
-      margin: 45px 0;
+      margin: auto 0;
       padding: 0;
+      display: flex;
     }
 
     .footer-text {
-      text-align: center;
-      margin: 67px 15px;
-      margin-left: 106px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
       letter-spacing: 6px;
       font-family: "Cormorant Garamond", serif;
       font-style: italic;
@@ -29,15 +30,17 @@ footer {
       display: flex;
       color: white;
       padding: 0;
-      margin: 46px 0;
+      display: flex;
+      margin: 46px;
+      justify-content: center;
 
       ul {
         padding: 0 122px;
 
         li {
           list-style-type: none;
-          margin: 0 5px;
-          width: 66px;
+          margin: 10px 5px;
+          width: 100%;
         }
       }
     }
@@ -70,19 +73,19 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    .footer-content {
-        .footer-text {
-          margin: 51px !important;
-        }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footer-content {
+    .footer-text {
+      margin: 51px !important;
     }
-    
-    .footer-menu {
-        justify-content: center;
-  
-        ul {
-          display: flex;
-          margin: 0 auto;
-        }
-      }
+  }
+
+  .footer-menu {
+    justify-content: center;
+
+    ul {
+      display: flex;
+      margin: 0 auto;
+    }
+  }
 }
