@@ -1,0 +1,51 @@
+.contact-us {
+  height: 600px;
+  overflow: hidden;
+  
+  &-content {
+    height: 100%;
+    display: flex;
+    padding: 0 !important;
+
+    .contact-us-text {
+      .section-heading {
+        padding: 30px;
+        margin: 45px 0;
+        font-family: "Cormorant Garamond";
+        font-style: italic;
+        font-weight: 300;
+      }
+
+      .info {
+        text-align: center;
+        font-family: "Montserrat";
+
+        &-item {
+          margin: 55px 0;
+
+          span {
+            font-weight: 700;
+          }
+
+          p{
+            margin: 20px 0;
+            font-weight: 300;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .map {
+      height: 100%;
+      border-radius: 13px;
+      padding: 0 !important;
+      #map {
+        height: 100%;
+        width: 100%;
+        padding: 0 !important;
+        filter: saturate(0.5);
+      }
+    }
+  }
+}
