@@ -1,7 +1,7 @@
 .grid {
   margin-top: 30px;
   padding-top: 30px;
-  padding: 0;
+  padding: 0 !important;
 
   .show {
     display: flex !important;
@@ -12,7 +12,7 @@
   .place {
     text-align: center;
     color: #3e3e3e;
-    margin: 50px 0;
+    margin: 25px 0;
     display: flex;
     padding: 0;
 
@@ -37,23 +37,31 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      height: 500px;
 
-      h2 {
-        margin: 12px 0;
-        font-family: "Cormorant Garamond", serif;
-        font-weight: 600;
-        font-size: 70px;
-        letter-spacing: 6px;
-        font-style: italic;
-      }
+      &-text {
+        padding: 108px;
+        overflow: hidden;
 
-      h6 {
-        font-family: "Montserrat";
-        font-style: italic;
-
-        span {
-          font-style: normal;
+        h2 {
+          margin: 12px 0;
+          font-family: "Cormorant Garamond", serif;
           font-weight: 600;
+          font-size: 70px;
+          letter-spacing: 6px;
+          font-style: italic;
+          padding: 20px;
+        }
+
+        h6 {
+          font-family: "Montserrat";
+          font-style: italic;
+          padding: 15px;
+
+          span {
+            font-style: normal;
+            font-weight: 600;
+          }
         }
       }
     }
