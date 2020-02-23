@@ -953,6 +953,25 @@ footer .footer-content .footer-menu ul li a:hover {
   color: #3e3e3e;
 }
 
+#restaurants-list .category-buttons .button-group .button:active {
+  color: white;
+  background-color: orange;
+}
+
+#restaurants-list .category-buttons .button-group .button:active i {
+  color: white;
+}
+
+#restaurants-list .category-buttons .active {
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+#restaurants-list .category-buttons .active i {
+  color: white !important;
+}
+
 #restaurants-list .grid .show {
   display: -webkit-box !important;
   display: -ms-flexbox !important;

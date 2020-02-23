@@ -18,10 +18,29 @@
         i {
           color: #3e3e3e;
         }
+
+        &:active {
+          color: white;
+          background-color: orange;
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .active {
+      color: white;
+      background-color: orange;
+      border: none;
+
+      i {
+        color: white !important;
       }
     }
   }
-
+  
   .grid {
     .show {
       display: flex !important;
@@ -84,8 +103,8 @@
       }
     }
 
-    &-image{
-      img{
+    &-image {
+      img {
         width: 200% !important;
       }
     }
