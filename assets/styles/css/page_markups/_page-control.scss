@@ -37,3 +37,9 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  #homepage-content{
+    overflow: visible !important;
+  }
+}

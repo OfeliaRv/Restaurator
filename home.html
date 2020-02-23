@@ -127,8 +127,8 @@
                 <h1>Any Kind Of Places For You</h1>
                 <hr>
             </div>
-            <div class="category-buttons">
-                <div class="button-group place-type" id="btn-place">
+            <div class="category-buttons col-lg-5 col-md-10 col-xl-5">
+                <div class="button-group place-type" id="btn-type">
                     <button class="button active" onclick="filterSelection('all')"><i
                             class="fas fa-infinity"></i><br>All</button>
                     <button class="button" onclick="filterSelection('cafe')"><i
@@ -139,8 +139,6 @@
                             class="fas fa-cocktail"></i><br>Bar</button>
                     <button class="button" onclick="filterSelection('coffeeshop')"><i
                             class="fas fa-coffee"></i><br>Coffee Shop</button>
-                </div>
-                <div class="button-group food-type" id="btn-food">
                     <button class="button" onclick="filterSelection('dessert')"><i class="fas fa-ice-cream"></i><br>
                         Dessert</button>
                     <button class="button" onclick="filterSelection('casual')"><i class="fas fa-fish"></i><br>
@@ -154,13 +152,15 @@
                 </div>
             </div>
 
-            <div class="grid col-lg-12">
-                <div class="place family cafe col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+
+            <!-- GRID DESKTOP -->
+            <div class="grid desktop col-lg-12 col-md-12">
+                <div class="place family cafe col-lg-12 col-md-12">
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/malacannes/malacannes-main.jpg" alt="malacannes">
                     </div>
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2 style="padding: 17px;">Malacannes 145</h2>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, eos deleniti. Voluptate
@@ -171,8 +171,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="place bar restaurant col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                <div class="place bar restaurant col-lg-12 col-md-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2>Maya Mexican</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit harum aliquid
@@ -182,17 +182,17 @@
                             <button><a href="./place-maya.html">See More...</a></button>
                         </div>
                     </div>
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-left" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/mayamexican/maya-main.jpg" alt="mayamexican" style="width:auto">
                     </div>
                 </div>
-                <div class="place coffeeshop col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                <div class="place coffeeshop col-lg-12 col-md-12">
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/coffeestation/coffeest-background2.jpg" alt="coffeestation">
                     </div>
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2>Coffee Station</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolorum
@@ -205,8 +205,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="place dessert family col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                <div class="place dessert family col-lg-12 col-md-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2>Lviv</h2>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia id expedita
@@ -216,19 +216,19 @@
                             <button><a href="./place-lviv.html">See More...</a></button>
                         </div>
                     </div>
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-left" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/lviv/lviv-main1.jpg" alt="lviv" style="bottom: 64px;
                     height: 133%;
                     position: relative;">
                     </div>
                 </div>
-                <div class="place restaurant casual family col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                <div class="place restaurant casual family col-lg-12 col-md-12">
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/lavenue/lavenue-main.jpg" alt="lavenue">
                     </div>
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2>L'avenue</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas error minus hic. Ex
@@ -239,8 +239,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="place restaurant eastern col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                <div class="place restaurant eastern col-lg-12 col-md-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2>Yuka Kaiten</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque, ab provident
@@ -252,17 +252,17 @@
                             <button><a href="./place-yuka.html">See More...</a></button>
                         </div>
                     </div>
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-left" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/yukakaiten/yuka-main1.jpg" alt="yukaKaiten">
                     </div>
                 </div>
-                <div class="place restaurant national col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                <div class="place restaurant national col-lg-12 col-md-12">
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/sumakh/sumakh1.jpg" alt="sumakh">
                     </div>
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2>Sumakh</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus minima
@@ -274,8 +274,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="place restaurant casual family col-lg-12 col-md-6 col-sm-6">
-                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                <div class="place restaurant casual family col-lg-12 col-md-12">
+                    <div class="place-info col-lg-6 col-md-6">
                         <div class="place-info-text">
                             <h2>Marivanna</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit debitis beatae
@@ -285,12 +285,153 @@
                             <button><a href="./place-marivanna.html">See More...</a></button>
                         </div>
                     </div>
-                    <div class="place-image col-lg-6 col-md-12 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                    <div class="place-image col-lg-6 col-md-6" data-aos="fade-left" data-aos-duration="1300"
                         data-aos-easing="ease-in-out" data-aos-once="true">
                         <img src="./assets/img/Places/marivanna/marivanna-main1.jpg" alt="marivanna">
                     </div>
                 </div>
             </div>
+            <!-- GRID DESKTOP -->
+
+            <!-- GRID MOBILE -->
+            <div class="grid mobile">
+                <div class="place family cafe col-md-12 col-sm-12">
+                    <div class="place-info col-md-6 col-sm-12">
+                        <div class="place-info-text">
+                            <h2 style="padding: 17px;">Malacannes 145</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, eos deleniti. Voluptate
+                                sint quam eaque ipsam cupiditate? Quam error eum reiciendis totam modi et, ullam
+                                sapiente esse dolorum nisi dolore.</p>
+                            <h6><span>Place type:</span> Cafe, Family</h6>
+                            <button><a href="./place-malacannes.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/malacannes/malacannes-main.jpg" alt="malacannes">
+                    </div>
+                </div>
+                <div class="place bar restaurant col-md-12 col-sm-12">
+                    <div class="place-info col-md-6 col-sm-12">
+                        <div class="place-info-text">
+                            <h2>Maya Mexican</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit harum aliquid
+                                reiciendis. Dicta at obcaecati iste impedit. Nostrum ab libero temporibus, qui,
+                                porro deserunt, et laudantium error dolorem vero aperiam.</p>
+                            <h6><span>Place type:</span> Restaurant, Bar</h6>
+                            <button><a href="./place-maya.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/mayamexican/maya-main.jpg" alt="mayamexican" style="width:auto">
+                    </div>
+                </div>
+                <div class="place coffeeshop col-md-12 col-sm-12">
+                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                        <div class="place-info-text">
+                            <h2>Coffee Station</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolorum
+                                consequuntur
+                                totam, eaque necessitatibus iste similique, officiis consequatur saepe sed quasi
+                                fuga
+                                labore, inventore obcaecati tempore. Rem minus ex enim!</p>
+                            <h6><span>Place type:</span> Coffee Shop</h6>
+                            <button><a href="./place-coffeest.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/coffeestation/coffeest-background2.jpg" alt="coffeestation">
+                    </div>
+                </div>
+                <div class="place dessert family col-md-12 col-sm-12">
+                    <div class="place-info col-lg-6 col-md-12 col-sm-12">
+                        <div class="place-info-text">
+                            <h2>Lviv</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia id expedita
+                                tenetur nihil. Eos possimus reiciendis doloribus enim facilis natus atque? Impedit
+                                repellendus molestias placeat quasi quia, eveniet dicta?</p>
+                            <h6><span>Place type:</span> Dessert, Family</h6>
+                            <button><a href="./place-lviv.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/lviv/lviv-main1.jpg" alt="lviv" style="bottom: 64px;
+                    height: 133%;
+                    position: relative;">
+                    </div>
+                </div>
+                <div class="place restaurant casual family col-md-12 col-sm-12">
+                    <div class="place-info col-md-6 col-sm-12">
+                        <div class="place-info-text">
+                            <h2>L'avenue</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas error minus hic. Ex
+                                explicabo numquam pariatur dicta, autem, nisi quia ullam ratione, voluptates delectus
+                                molestiae eveniet expedita eligendi officiis hic?</p>
+                            <h6><span>Place type:</span> Restaurant, Family</h6>
+                            <button><a href="./place-lavenue.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/lavenue/lavenue-main.jpg" alt="lavenue">
+                    </div>
+                </div>
+                <div class="place restaurant eastern col-md-12 col-sm-12">
+                    <div class="place-info col-md-6 col-sm-12">
+                        <div class="place-info-text">
+                            <h2>Yuka Kaiten</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque, ab provident
+                                quibusdam
+                                vitae reprehenderit maiores sint eaque repellat sapiente architecto nobis voluptatem
+                                aliquid
+                                culpa sit recusandae temporibus labore voluptatibus?</p>
+                            <h6><span>Place type:</span> Restaurant, Eastern</h6>
+                            <button><a href="./place-yuka.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/yukakaiten/yuka-main1.jpg" alt="yukaKaiten">
+                    </div>
+                </div>
+                <div class="place restaurant national col-md-12 col-sm-12">
+                    <div class="place-info col-md-6 col-sm-12">
+                        <div class="place-info-text">
+                            <h2>Sumakh</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellendus minima
+                                reiciendis, corrupti eius doloribus quasi aut commodi maiores velit nesciunt est
+                                delectus
+                                autem, mollitia illum quibusdam fuga eligendi optio?</p>
+                            <h6><span>Place type:</span> Restaurant, National</h6>
+                            <button><a href="./place-sumakh.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/sumakh/sumakh1.jpg" alt="sumakh">
+                    </div>
+                </div>
+                <div class="place restaurant casual family col-md-12 col-sm-12">
+                    <div class="place-info col-md-6 col-sm-12">
+                        <div class="place-info-text">
+                            <h2>Marivanna</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit debitis beatae
+                                officia, sed praesentium ad natus consequatur voluptatem optio facilis enim error
+                                ratione voluptates fugiat magni nihil, alias cupiditate.</p>
+                            <h6><span>Place type: </span>Restaurant, Casual, Family</h6>
+                            <button><a href="./place-marivanna.html">See More...</a></button>
+                        </div>
+                    </div>
+                    <div class="place-image col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1300"
+                        data-aos-easing="ease-in-out" data-aos-once="true">
+                        <img src="./assets/img/Places/marivanna/marivanna-main1.jpg" alt="marivanna">
+                    </div>
+                </div>
+            </div>
+            <!-- GRID MOBILE -->
         </section>
         <!-- RESTAURANTS LIST -->
 
@@ -298,16 +439,15 @@
         <footer>
             <div class="container">
                 <div class="footer-content col-lg-12">
-                    <div class="logo col-sm-12 col-md-5 col-lg-4">
+                    <div class="logo col-sm-12 col-md-12 col-lg-4">
                         <h1><a href="./home.html">Restaurator</a></h1>
                     </div>
-                    <div class="footer-text col-sm-12 col-md-5 col-lg-4">
+                    <div class="footer-text col-sm-12 col-md-12 col-lg-4">
                         <h6>Baku, Azerbaijan</h6>
                     </div>
                     <div class="footer-menu col-sm-12 col-md-12 col-lg-4">
-                        <ul>
-                            <li><a href="./home.html">Home</a></li>
-                        </ul>
+                        <p>Contact: +99450 3077977</p>
+                        <p>Mail: ofelyaar@code.edu.az</p>
                     </div>
                 </div>
             </div>

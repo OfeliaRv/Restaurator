@@ -11,3 +11,11 @@
         width: 460px;
     }
 }
+
+@media screen and (max-width: 424px){
+    .section-heading{
+        h1{
+            margin-top: 35px;
+        }
+    }
+}
