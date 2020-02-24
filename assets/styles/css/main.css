@@ -200,6 +200,7 @@ option {
 .three-circles-withpic .circles-options .circles-option .circles-text {
   font-weight: 300;
   text-align: center;
+  margin-top: 25px;
 }
 
 .three-circles-withpic .circles-options .circles-option .circles-text h1 {
