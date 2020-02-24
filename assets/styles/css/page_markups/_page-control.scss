@@ -2,6 +2,11 @@ body {
   margin: 0 auto;
 }
 
+.page-content{
+    position: relative;
+    overflow: hidden;
+}
+
 .margin-75 {
   height: 75px;
 }
@@ -39,7 +44,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  #homepage-content{
+  .page-content{
     overflow: visible !important;
   }
 }

@@ -51,6 +51,12 @@
     .place {
       display: none;
 
+      &-image{
+        img{
+          filter: saturate(0.7);
+        }
+      }
+
       &-info {
         background-image: url(../../img/home-img/frame.png);
         background-size: 72%;
@@ -85,60 +91,5 @@
   #restaurants-list {
     position: relative;
     top: 913px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .place {
-    &-info {
-      height: 540px !important;
-
-      &-text {
-        padding: 25px !important;
-
-        h2 {
-          margin: 21px 0 !important;
-          font-size: 50px !important;
-        }
-      }
-    }
-
-    &-image {
-      img {
-        width: 200% !important;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .place {
-    &-info {
-      &-text {
-        h2 {
-          font-size: 38px !important;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .mobile {
-    display: block;
-  }
-
-  .desktop {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile {
-    display: none;
-  }
-
-  .desktop {
-    display: block;
   }
 }

@@ -8,6 +8,11 @@ body {
   margin: 0 auto;
 }
 
+.page-content {
+  position: relative;
+  overflow: hidden;
+}
+
 .margin-75 {
   height: 75px;
 }
@@ -43,7 +48,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  #homepage-content {
+  .page-content {
     overflow: visible !important;
   }
 }
@@ -163,7 +168,16 @@ option {
 }
 
 .three-circles-withpic .circles-options .circles-option {
-  margin: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .three-circles-withpic .circles-options .circles-option .circles-image {
@@ -173,6 +187,14 @@ option {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 330px;
+}
+
+.three-circles-withpic .circles-options .circles-option .circles-image img {
+  height: 330px;
+  width: 330px;
 }
 
 .three-circles-withpic .circles-options .circles-option .circles-text {
@@ -229,7 +251,7 @@ option {
   padding: 0;
 }
 
-.grid .place .place-image {
+.grid .place-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,22 +259,20 @@ option {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 10px;
-  -webkit-box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
-          box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
+  -webkit-box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, 0.25);
   height: 500px;
   overflow: hidden;
   padding: 0;
 }
 
-.grid .place .place-image img {
+.grid .place-image img {
   height: 100%;
   width: 100%;
   margin: auto;
-  -webkit-filter: saturate(0.7);
-          filter: saturate(0.7);
 }
 
-.grid .place .place-info {
+.grid .place-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,12 +286,19 @@ option {
   height: 500px;
 }
 
-.grid .place .place-info-text {
+.grid .place-info-text {
   padding: 108px;
   overflow: hidden;
 }
 
-.grid .place .place-info-text h2 {
+.grid .place-info-text p {
+  font-family: "Cormorand Garamont";
+  font-style: italic;
+  font-size: 35px;
+  text-align: start;
+}
+
+.grid .place-info-text h2 {
   margin: 12px 0;
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
@@ -281,15 +308,55 @@ option {
   padding: 20px;
 }
 
-.grid .place .place-info-text h6 {
+.grid .place-info-text h6 {
   font-family: "Montserrat";
   font-style: italic;
   padding: 15px;
 }
 
-.grid .place .place-info-text h6 span {
+.grid .place-info-text h6 span {
   font-style: normal;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .place-info {
+    height: 540px !important;
+  }
+  .place-info-text {
+    padding: 25px !important;
+  }
+  .place-info-text h2 {
+    margin: 21px 0 !important;
+    font-size: 50px !important;
+  }
+  .place-image img {
+    width: 200% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place-info-text h2 {
+    font-size: 38px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
 }
 
 .stars {
@@ -630,6 +697,8 @@ option {
           justify-content: space-between;
   margin: 0 auto;
   padding: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item {
@@ -672,6 +741,10 @@ option {
   font-size: 19px;
   font-family: "Cormorant Garamond";
   font-style: italic;
+}
+
+.best-dishes .menu-card .container .menu-card-container .menu-content .menu-column .menu-item .dish-text p {
+  height: 25px;
 }
 
 #homepage-content {
@@ -759,6 +832,10 @@ option {
 
 .background-img-container .background-img .nav-bar .nav-menu ul li a:hover {
   color: #e2b948;
+  position: relative;
+  bottom: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -987,6 +1064,11 @@ footer .footer-content .footer-menu ul li a:hover {
   display: none;
 }
 
+#restaurants-list .grid .place-image img {
+  -webkit-filter: saturate(0.7);
+          filter: saturate(0.7);
+}
+
 #restaurants-list .grid .place-info {
   background-image: url(../../img/home-img/frame.png);
   background-size: 72%;
@@ -1017,46 +1099,6 @@ footer .footer-content .footer-menu ul li a:hover {
   #restaurants-list {
     position: relative;
     top: 913px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .place-info {
-    height: 540px !important;
-  }
-  .place-info-text {
-    padding: 25px !important;
-  }
-  .place-info-text h2 {
-    margin: 21px 0 !important;
-    font-size: 50px !important;
-  }
-  .place-image img {
-    width: 200% !important;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .place-info-text h2 {
-    font-size: 38px !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .mobile {
-    display: block;
-  }
-  .desktop {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mobile {
-    display: none;
-  }
-  .desktop {
-    display: block;
   }
 }
 

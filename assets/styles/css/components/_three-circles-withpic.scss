@@ -10,11 +10,21 @@
     flex-wrap: wrap;
 
     .circles-option {
-      margin: 10px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .circles-image {
         display: flex;
         justify-content: center;
+        border-radius: 100%;
+        overflow: hidden;
+        width: 330px;
+
+        img {
+          height: 330px;
+          width: 330px;
+        }
       }
 
       .circles-text {

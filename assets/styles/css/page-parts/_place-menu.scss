@@ -39,6 +39,7 @@
           justify-content: space-between;
           margin: 0 auto;
           padding: 12px;
+          flex-wrap: wrap;
 
           .menu-column {
             .menu-item {
@@ -76,6 +77,10 @@
                 font-size: 19px;
                 font-family: "Cormorant Garamond";
                 font-style: italic;
+
+                p{
+                  height: 25px;
+                }
               }
             }
           }

@@ -61,6 +61,9 @@
 
                 &:hover {
                   color: rgb(226, 185, 72);
+                  position: relative;
+                  bottom: 5px;
+                  transition: 0.3s ease;
                 }
               }
             }
