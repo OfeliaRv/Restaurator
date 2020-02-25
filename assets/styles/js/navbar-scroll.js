@@ -1,16 +1,13 @@
-var navbar = document.getElementsByClassName("nav-bar");
+$(window).scroll(function () {
+   if ($(this).scrollTop() > 489) {
+      $('#nav-bar').addClass('nav-scrolled');
+   } else {
+      $('#nav-bar').removeClass('nav-scrolled');
+   }
 
-window.addEventListener('scroll', function () {
-    AddClass(navbar, "nav-scrolled");
+   if ($(this).scrollTop() > 325) {
+      $('#nav-bar-auth').addClass('nav-scrolled');
+   } else {
+      $('#nav-bar-auth').removeClass('nav-scrolled');
+   }
 });
-
-function AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-        }
-    }
-}

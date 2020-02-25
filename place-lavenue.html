@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,700,700i|Montserrat:300,400|Sacramento&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Restaurator - L'avenue</title>
 </head>
 
@@ -21,7 +22,7 @@
         <div class="background-img-container">
             <div class="background-img">
                 <!-- NAV -->
-                <section class="nav-bar">
+                <section id="nav-bar" class="nav-bar">
                     <div class="container">
                         <div class="nav">
                             <div class="logo col-sm-12 col-md-5 col-lg-2">
@@ -81,8 +82,8 @@
                             laboriosam.</p>
                     </div>
                 </div>
-                <div class="circles-option col-sm-12 col-md-10 col-lg-4" data-aos="fade-down"
-                    data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-once="true"
+                <div class="circles-option col-sm-12 col-md-10 col-lg-4" data-aos="fade-down" data-aos-duration="1200"
+                    data-aos-delay="200" data-aos-easing="ease-in-out" data-aos-once="true"
                     data-aos-anchor-placement="top-center">
                     <div class="circles-image">
                         <img src="./assets/img/Places/coffeestation/breakfast.jpg" alt="img2">
@@ -409,39 +410,41 @@
             </div>
             <div class="map col-lg-6 col-md-6 col-sm-12">
                 <iframe id="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.6314477261812!2d49.84899996156682!3d40.3726956895427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dac29587f67%3A0xa6b901084ed418e5!2sMari%20Vanna!5e0!3m2!1sen!2s!4v1582311179228!5m2!1sen!2s"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.825963283823!2d49.83930701525548!3d40.346206579373316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307df94296df03%3A0xf42a93a937ba40a2!2sL&#39;avenue%20Restaurant!5e0!3m2!1sen!2s!4v1582653388236!5m2!1sen!2s"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" data-aos="fade-left"
+                    data-aos-duration="1300" data-aos-easing="ease-in-out" data-aos-once="true"></iframe>
             </div>
         </div>
     </section>
     <!-- CONTACT US -->
 
-   <!-- FOOTER -->
-   <footer>
-    <div class="container">
-        <div class="footer-content col-lg-12">
-            <div class="logo col-sm-12 col-md-5 col-lg-4">
-                <h1><a href="./home.html">Restaurator</a></h1>
-            </div>
-            <div class="footer-text col-sm-12 col-md-5 col-lg-4">
-                <h6>Baku, Azerbaijan</h6>
-            </div>
-            <div class="footer-menu col-sm-12 col-md-12 col-lg-4">
-                <ul>
-                    <li>Home</li>
-                    <li>Best Dishes</li>
-                    <li>Reservation</li>
-                    <li>Contact Us</li>
-                </ul>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content col-lg-12">
+                <div class="logo col-sm-12 col-md-5 col-lg-4">
+                    <h1><a href="./home.html">Restaurator</a></h1>
+                </div>
+                <div class="footer-text col-sm-12 col-md-5 col-lg-4">
+                    <h6>Baku, Azerbaijan</h6>
+                </div>
+                <div class="footer-menu col-sm-12 col-md-12 col-lg-4">
+                    <ul>
+                        <li>Home</li>
+                        <li>Best Dishes</li>
+                        <li>Reservation</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- FOOTER -->
+    </footer>
+    <!-- FOOTER -->
 
 
     <!-- ALL JS HERE -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/styles/js/navbar-scroll.js"></script>
     <script>
         AOS.init();
     </script>

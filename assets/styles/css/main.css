@@ -523,6 +523,7 @@ option {
   height: 100%;
   border-radius: 13px;
   padding: 0 !important;
+  overflow: hidden;
 }
 
 .contact-us-content .map #map {
@@ -768,14 +769,19 @@ option {
 }
 
 .background-img-container .background-img .nav-scrolled {
-  background-color: red;
+  background-color: white;
+  z-index: 10;
+}
+
+.background-img-container .background-img .nav-scrolled .nav-menu a {
+  color: grey !important;
 }
 
 .background-img-container .background-img .nav-bar {
   height: 100px;
   position: absolute;
   width: 100%;
-  z-index: 5;
+  z-index: 99999;
 }
 
 .background-img-container .background-img .nav-bar .nav {
@@ -841,8 +847,7 @@ option {
 
 @media screen and (min-width: 768px) {
   .nav-bar {
-    position: fixed;
-    top: 20px;
+    position: fixed !important;
   }
   .nav-bar .nav-logo {
     text-align: left !important;
@@ -1031,12 +1036,12 @@ footer .footer-content .footer-menu ul li a:hover {
   color: #3e3e3e;
 }
 
-#restaurants-list .category-buttons .button-group .button:active {
+#restaurants-list .category-buttons .button-group .button:active, #restaurants-list .category-buttons .button-group .button:hover {
   color: white;
   background-color: orange;
 }
 
-#restaurants-list .category-buttons .button-group .button:active i {
+#restaurants-list .category-buttons .button-group .button:active i, #restaurants-list .category-buttons .button-group .button:hover i {
   color: white;
 }
 
@@ -1077,6 +1082,10 @@ footer .footer-content .footer-menu ul li a:hover {
   background-repeat: no-repeat;
 }
 
+#restaurants-list .grid .place-info-text p {
+  font-size: 16px;
+}
+
 #restaurants-list .grid .place-info button {
   height: 48px;
   width: 147px;
@@ -1094,6 +1103,15 @@ footer .footer-content .footer-menu ul li a:hover {
   color: white;
   font-weight: 600;
   font-size: 14px;
+}
+
+#restaurants-list .grid .place-info button:hover {
+  border: 1px solid orange;
+  background-color: white;
+}
+
+#restaurants-list .grid .place-info button:hover a {
+  color: orange;
 }
 
 @media screen and (max-width: 992px) {

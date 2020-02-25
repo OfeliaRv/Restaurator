@@ -18,14 +18,21 @@
     width: 100%;
 
     .nav-scrolled {
-      background-color: red;
+      background-color: white;
+      z-index: 10;
+
+      .nav-menu{
+        a{
+          color: grey !important;
+        }
+      }
     }
 
     .nav-bar {
       height: 100px;
       position: absolute;
       width: 100%;
-      z-index: 5;
+      z-index: 99999;
 
       .nav {
         display: flex;
@@ -76,8 +83,8 @@
 
 @media screen and (min-width: 768px) {
   .nav-bar {
-    position: fixed;
-    top: 20px;
+    position: fixed !important;
+    //top: 20px;
 
     .nav-logo {
       text-align: left !important;
