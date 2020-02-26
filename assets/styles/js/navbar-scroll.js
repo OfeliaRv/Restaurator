@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-   if ($(this).scrollTop() > 489) {
+   if ($(this).scrollTop() > 610) {
       $('#nav-bar').addClass('nav-scrolled');
    } else {
       $('#nav-bar').removeClass('nav-scrolled');
