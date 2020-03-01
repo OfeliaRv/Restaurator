@@ -2,9 +2,9 @@ body {
   margin: 0 auto;
 }
 
-.page-content{
-    position: relative;
-    overflow: hidden;
+.page-content {
+  position: relative;
+  overflow: hidden;
 }
 
 .margin-75 {
@@ -23,9 +23,13 @@ body {
   height: 465px;
 }
 
-@media screen and (max-width: 490px) {
+.margin-990 {
+  height: 990px;
+}
+
+@media screen and (max-width: 425px) {
   hr {
-    width: 390px !important;
+    width: 345px !important;
   }
 }
 
@@ -43,8 +47,14 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .page-content{
-    overflow: visible !important;
+@media (min-width: 992px) {
+  .col-lg-5 {
+    max-width: unset !important;
   }
 }
+
+// @media screen and (max-width: 992px) {
+//   .page-content {
+//     overflow: visible !important;
+//   }
+// }

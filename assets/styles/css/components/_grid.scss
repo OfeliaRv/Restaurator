@@ -76,34 +76,42 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .place {
-    &-info {
-      height: 540px !important;
+  .grid {
+    .place {
+      &-info {
+        height: 540px !important;
 
-      &-text {
-        padding: 25px !important;
+        &-text {
+          padding: 25px !important;
 
-        h2 {
-          margin: 21px 0 !important;
-          font-size: 50px !important;
+          h2 {
+            margin: 21px 0 !important;
+            font-size: 50px !important;
+          }
+
+          p {
+            text-align: center !important;
+          }
         }
       }
-    }
 
-    &-image {
-      img {
-        width: 200% !important;
+      &-image {
+        img {
+          width: 200% !important;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 320px) {
-  .place {
-    &-info {
-      &-text {
-        h2 {
-          font-size: 38px !important;
+  .grid {
+    .place {
+      &-info {
+        &-text {
+          h2 {
+            font-size: 38px !important;
+          }
         }
       }
     }
@@ -117,6 +125,17 @@
 
   .desktop {
     display: none;
+  }
+
+  .meals-pictures {
+    position: relative;
+    
+    .grid {
+      .place {
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
   }
 }
 

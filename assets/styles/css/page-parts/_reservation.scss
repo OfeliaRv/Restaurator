@@ -13,7 +13,7 @@
     bottom: 617px;
 
     &-container {
-      height: 510px;
+      height: auto;
       margin: 0 auto;
       background-color: white;
       border-radius: 10px;
@@ -63,7 +63,7 @@
 
           button {
             height: 43px;
-            margin: 55px auto;
+            margin: auto;
             border-radius: 5px;
             border: none;
             color: orange;
@@ -73,6 +73,20 @@
             letter-spacing: 2px;
             font-weight: 700;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .reservation {
+    &-card { 
+      padding: 0;
+      
+      &-container {
+        hr {
+          width: 345px !important;
         }
       }
     }

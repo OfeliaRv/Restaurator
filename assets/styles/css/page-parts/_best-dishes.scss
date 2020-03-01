@@ -1,0 +1,202 @@
+.best-dishes {
+  height: 1157px;
+
+  .background-up {
+    background: url(../../img/collage-01.jpg);
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -246px;
+  }
+
+  .menu-card {
+    height: 0;
+
+    .menu-card-container {
+      z-index: 2;
+      margin: 0 auto;
+      padding: 16px;
+      border-radius: 10px;
+      height: auto;
+      //border: 1px solid lightsalmon;
+      background-color: white;
+      position: relative;
+      bottom: 1364px;
+      //box-shadow: 0px 6px 61px 12px rgba(207, 174, 118, 1);
+
+      .menu-icon {
+        margin: 15px auto;
+        padding: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .menu-content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 12px;
+        flex-wrap: wrap;
+
+        .menu-column {
+          .menu-item {
+            padding: 20px;
+            margin: 40px 0;
+
+            .dish-heading {
+              display: flex;
+              justify-content: space-between;
+
+              h2 {
+                font-family: "Montserrat";
+                color: #646464;
+                font-weight: 300;
+                font-size: 26px;
+                margin: 0;
+              }
+
+              .price {
+                font-size: 17px;
+                font-weight: 600;
+              }
+            }
+
+            hr {
+              border: none;
+              border-top: 1px dotted #eee;
+              color: #fff;
+              background-color: #fff;
+              height: 1px;
+              width: 100%;
+            }
+
+            .dish-text {
+              font-size: 19px;
+              font-family: "Cormorant Garamond";
+              font-style: italic;
+              height: 50px;
+
+              p {
+                height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu-card-container {
+    .section-heading {
+      hr {
+        width: 280px !important;
+      }
+    }
+
+    .menu-item {
+      margin: 60px 0 !important;
+      
+      hr {
+        width: 180px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .best-dishes {
+    .background-up {
+      background: none !important;
+      height: 1210px !important;
+    }
+  }
+
+  .menu-card-container {
+    hr {
+      width: 345px !important;
+    }
+
+    .menu-item {
+      margin: 60px 0 !important;
+
+      hr {
+        width: 250px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .best-dishes {
+    .background-up {
+      background-position-y: -250px !important;
+      height: 1080px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .best-dishes {
+    .background-up {
+      background-position-y: -128px;
+      height: 1080px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-card {
+    .menu-card-container {
+      bottom: 1026px !important;
+    }
+  }
+}
+
+// @media screen and (min-width: 1025px) {
+//   .menu-card {
+//     .menu-card-container {
+//       bottom: unset;
+//     }
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    .dish-text {
+      height: 85px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .best-dishes {
+    .background-up {
+      background-size: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .menu-card-container {
+    .menu-icon {
+      display: flex !important;
+      justify-content: center !important;
+
+      img {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .best-dishes {
+    .background-up {
+      background-position-y: -439px;
+    }
+  }
+}

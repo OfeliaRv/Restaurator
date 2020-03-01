@@ -26,3 +26,82 @@
     font-size: 60px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .rating-stars {
+    height: 125px !important;
+    background-size: 88%;
+
+    .stars {
+      padding: 0;
+
+      span {
+        margin: 9px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .rating-and-reviews {
+    margin-top: 122px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .best-dishes {
+    height: 892px !important;
+  }
+
+  .rating-stars {
+    background-size: 92%;
+    background-position-y: -21px;
+    margin: unset;
+
+    .stars {
+      span {
+        font-size: 40px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 424px) {
+  .rating-stars {
+    height: 155px !important;
+    background-size: 88%;
+    margin: unset;
+    background-position-y: -30px;
+
+    .stars {
+      padding: unset;
+
+      span {
+        margin: 10px;
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .rating-stars {
+    background-size: 64%;
+    margin: unset;
+    background-position-y: -19px;
+
+    .stars {
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+  .rating-stars {
+    background-size: 64%;
+    margin: unset;
+  }
+}
