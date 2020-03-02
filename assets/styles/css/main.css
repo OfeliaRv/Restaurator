@@ -1001,20 +1001,36 @@ option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 20px auto;
 }
 
+.background-img-container .background-img .nav-bar .nav-icon {
+  color: white;
+  padding: 21px 30px;
+}
+
+.background-img-container .background-img .nav-bar .nav-mobile {
+  background-color: white;
+  border-radius: 23px;
+}
+
+.background-img-container .background-img .nav-bar .nav-mobile ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.background-img-container .background-img .nav-bar .nav-mobile ul li a,
+.background-img-container .background-img .nav-bar .nav-mobile ul li i {
+  color: #3e3e3e !important;
+  padding: 0;
+}
+
 .background-img-container .background-img .nav-bar .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 13px 0;
   padding: 0;
 }
@@ -1023,10 +1039,6 @@ option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 0 auto;
   padding: 0;
   -webkit-box-pack: center;
@@ -1056,6 +1068,44 @@ option {
   bottom: 5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-bar .nav-icon {
+    margin: 0px auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-desktop {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav-mobile {
+    display: none !important;
+  }
+  .nav-icon {
+    display: none !important;
+  }
+  .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1103,6 +1153,12 @@ option {
   font-style: italic;
   font-weight: 700;
   font-size: 104px;
+}
+
+@media screen and (max-width: 425px) {
+  .authorization-header .authorization-heading h1 {
+    font-size: 72px !important;
+  }
 }
 
 footer {

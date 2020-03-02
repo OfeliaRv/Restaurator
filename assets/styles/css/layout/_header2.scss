@@ -26,3 +26,13 @@
     }
   }
 }
+
+@media screen and (max-width: 425px){
+  .authorization-header {
+    .authorization-heading { 
+      h1 {
+        font-size: 72px !important;
+      }
+    }
+  }
+}
