@@ -87,6 +87,12 @@
           font-family: "Montserrat";
           font-size: 13px;
           font-weight: 700;
+
+          &:hover {
+            border: 1px solid orange;
+            background-color: white;
+            color: orange;
+          }
         }
       }
     }
@@ -102,23 +108,23 @@
     }
   }
 
-  .add-comment-section{
+  .add-comment-section {
     margin-top: unset;
   }
 }
 
 @media screen and (min-width: 426px) and (max-width: 1024px) {
-  .comments-section{
-    .comment{
+  .comments-section {
+    .comment {
       margin: 10px auto;
     }
-  } 
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .comments-section{
-    .comment{
+  .comments-section {
+    .comment {
       width: 47% !important;
     }
-  } 
+  }
 }

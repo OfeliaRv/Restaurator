@@ -18,11 +18,9 @@
       padding: 16px;
       border-radius: 10px;
       height: auto;
-      //border: 1px solid lightsalmon;
       background-color: white;
       position: relative;
       bottom: 1364px;
-      //box-shadow: 0px 6px 61px 12px rgba(207, 174, 118, 1);
 
       .menu-icon {
         margin: 15px auto;
@@ -60,6 +58,7 @@
               .price {
                 font-size: 17px;
                 font-weight: 600;
+                padding: 10px;
               }
             }
 
@@ -99,7 +98,7 @@
 
     .menu-item {
       margin: 60px 0 !important;
-      
+
       hr {
         width: 180px !important;
       }
@@ -155,14 +154,6 @@
     }
   }
 }
-
-// @media screen and (min-width: 1025px) {
-//   .menu-card {
-//     .menu-card-container {
-//       bottom: unset;
-//     }
-//   }
-// }
 
 @media screen and (min-width: 768px) {
   .menu-item {

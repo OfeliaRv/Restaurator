@@ -43,7 +43,6 @@
 
       .nav {
         display: flex;
-        //flex-direction: row;
         justify-content: space-between;
         margin: 20px auto;
 
@@ -92,12 +91,17 @@
                 line-height: 40px;
                 color: #fff;
                 margin: 0px 10px;
+                padding: 25px 0;
+              }
 
-                &:hover {
+              &:hover {
+                position: relative;
+                bottom: 5px;
+                transition: 0.2s ease;
+                margin-bottom: 5px;
+
+                a {
                   color: rgb(226, 185, 72);
-                  position: relative;
-                  bottom: 5px;
-                  transition: 0.3s ease;
                 }
               }
             }

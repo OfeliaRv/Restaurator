@@ -19,7 +19,8 @@
           color: #3e3e3e;
         }
 
-        &:active, &:hover {
+        &:active,
+        &:hover {
           color: white;
           background-color: orange;
 
@@ -69,43 +70,24 @@
           }
         }
 
-        button {
-          height: 48px;
-          width: 147px;
+        a {
+          text-decoration: none;
+          font-weight: 700;
           border: none;
           border-radius: 9px;
-          margin: 20px auto;
-          font-style: normal;
-          font-size: 16px;
+          color: white;
+          padding: 13px 35px;
+          font-size: 15px;
           font-family: "Montserrat";
-          //background-color: #f9c62e;
-          //background-color: #eeba5d;
           background-color: orange;
-
-          a {
-            text-decoration: none;
-            color: white;
-            font-weight: 600;
-            font-size: 14px;
-          }
 
           &:hover {
             border: 1px solid orange;
             background-color: white;
-
-            a {
-              color: orange;
-            }
+            color: orange;
           }
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #restaurants-list {
-    position: relative;
-    top: 913px;
   }
 }

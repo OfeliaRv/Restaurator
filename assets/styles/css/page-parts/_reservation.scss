@@ -64,7 +64,6 @@
           button {
             height: 43px;
             margin: auto;
-            border-radius: 5px;
             border: none;
             color: orange;
             background-color: transparent;
@@ -72,6 +71,10 @@
             font-size: 16px;
             letter-spacing: 2px;
             font-weight: 700;
+
+            &:hover{
+              border-bottom: 1px solid orange;
+            }
           }
         }
       }

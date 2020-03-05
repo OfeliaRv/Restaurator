@@ -20,7 +20,6 @@
       display: flex;
       justify-content: center;
       border-radius: 10px;
-      //box-shadow: -3px 8px 25px -5px rgba(220, 224, 221, 0.91);
       box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, 0.25);
       height: 500px;
       overflow: hidden;
@@ -40,13 +39,13 @@
       height: 500px;
 
       &-text {
-        padding: 108px;
+        padding: 89px;
         overflow: hidden;
 
         p {
           font-family: "Cormorand Garamont";
           font-style: italic;
-          font-size: 35px;
+          font-size: 24px;
           text-align: start;
         }
 
@@ -64,6 +63,7 @@
           font-family: "Montserrat";
           font-style: italic;
           padding: 15px;
+          margin-bottom: 17px;
 
           span {
             font-style: normal;
@@ -129,7 +129,7 @@
 
   .meals-pictures {
     position: relative;
-    
+
     .grid {
       .place {
         flex-direction: column;

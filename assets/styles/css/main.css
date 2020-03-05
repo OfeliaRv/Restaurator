@@ -194,6 +194,7 @@ option {
   border-radius: 100%;
   overflow: hidden;
   width: 330px;
+  height: 330px;
 }
 
 .three-circles-withpic .circles-options .circles-option .circles-image img {
@@ -292,14 +293,14 @@ option {
 }
 
 .grid .place-info-text {
-  padding: 108px;
+  padding: 89px;
   overflow: hidden;
 }
 
 .grid .place-info-text p {
   font-family: "Cormorand Garamont";
   font-style: italic;
-  font-size: 35px;
+  font-size: 24px;
   text-align: start;
 }
 
@@ -317,6 +318,7 @@ option {
   font-family: "Montserrat";
   font-style: italic;
   padding: 15px;
+  margin-bottom: 17px;
 }
 
 .grid .place-info-text h6 span {
@@ -555,7 +557,6 @@ option {
 .reservation-card-container .reservation-content .reservation-form button {
   height: 43px;
   margin: auto;
-  border-radius: 5px;
   border: none;
   color: orange;
   background-color: transparent;
@@ -563,6 +564,10 @@ option {
   font-size: 16px;
   letter-spacing: 2px;
   font-weight: 700;
+}
+
+.reservation-card-container .reservation-content .reservation-form button:hover {
+  border-bottom: 1px solid orange;
 }
 
 @media screen and (max-width: 425px) {
@@ -757,6 +762,12 @@ option {
   font-weight: 700;
 }
 
+.add-comment-section .add-comment form .comment-btns button:hover {
+  border: 1px solid orange;
+  background-color: white;
+  color: orange;
+}
+
 @media screen and (max-width: 425px) {
   .comments-section .comment {
     margin: 15px auto;
@@ -854,6 +865,7 @@ option {
 .best-dishes .menu-card .menu-card-container .menu-content .menu-column .menu-item .dish-heading .price {
   font-size: 17px;
   font-weight: 600;
+  padding: 10px;
 }
 
 .best-dishes .menu-card .menu-card-container .menu-content .menu-column .menu-item hr {
@@ -1060,14 +1072,19 @@ option {
   line-height: 40px;
   color: #fff;
   margin: 0px 10px;
+  padding: 25px 0;
 }
 
-.background-img-container .background-img .nav-bar .nav-menu ul li a:hover {
-  color: #e2b948;
+.background-img-container .background-img .nav-bar .nav-menu ul li:hover {
   position: relative;
   bottom: 5px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  margin-bottom: 5px;
+}
+
+.background-img-container .background-img .nav-bar .nav-menu ul li:hover a {
+  color: #e2b948;
 }
 
 .show {
@@ -1360,39 +1377,22 @@ footer .footer-content .footer-menu ul li a:hover {
   font-size: 16px;
 }
 
-#restaurants-list .grid .place-info button {
-  height: 48px;
-  width: 147px;
+#restaurants-list .grid .place-info a {
+  text-decoration: none;
+  font-weight: 700;
   border: none;
   border-radius: 9px;
-  margin: 20px auto;
-  font-style: normal;
-  font-size: 16px;
+  color: white;
+  padding: 13px 35px;
+  font-size: 15px;
   font-family: "Montserrat";
   background-color: orange;
 }
 
-#restaurants-list .grid .place-info button a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-#restaurants-list .grid .place-info button:hover {
+#restaurants-list .grid .place-info a:hover {
   border: 1px solid orange;
   background-color: white;
-}
-
-#restaurants-list .grid .place-info button:hover a {
   color: orange;
-}
-
-@media screen and (max-width: 992px) {
-  #restaurants-list {
-    position: relative;
-    top: 913px;
-  }
 }
 
 .authorization .authentication-form {
