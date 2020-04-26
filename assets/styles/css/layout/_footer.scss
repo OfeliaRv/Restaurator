@@ -35,6 +35,8 @@ footer {
       padding: 0;
       margin: 46px;
       flex-direction: column;
+      font-family: montserrat;
+      text-align: center;
 
       ul {
         padding: 0 122px;
@@ -77,6 +79,7 @@ footer {
         text-align: center !important;
         margin: 0;
         justify-content: space-between;
+        align-items: center;
       }
     }
   }

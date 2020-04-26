@@ -13,9 +13,10 @@
 
   .background-img {
     position: relative;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
     width: 100%;
+    background-position-y: 0px;
 
     .nav-scrolled {
       background-color: rgba(255, 255, 255, 0.95);
@@ -72,7 +73,12 @@
         &-menu {
           margin: 13px 0;
           padding: 0;
+          display: flex;
+          justify-content: flex-end;
+        }
 
+        &-menu,
+        &-mobile {
           ul {
             display: flex;
             margin: 0 auto;
@@ -83,6 +89,7 @@
               list-style-type: none;
               width: max-content;
               text-align: center;
+              margin: 0 auto;
 
               a {
                 text-decoration: none;

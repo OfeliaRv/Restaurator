@@ -47,6 +47,17 @@
     box-shadow: 0px 2px 20px -4px rgba(210, 177, 15, 0.56);
     padding: 15px 25px 0 25px;
 
+    .log-message{
+      font-family: "Cormorant Garamond";
+      color: #3e3e3e;
+      font-size: 23px;
+      text-align: center;
+
+      a{
+        color: orange;
+      }
+    }
+
     h5 {
       margin: 20px 0;
       font-family: "Montserrat";

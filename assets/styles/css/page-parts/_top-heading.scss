@@ -23,8 +23,25 @@
     letter-spacing: 8px;
     font-weight: 600;
     font-size: 13px;
-    margin-top: 14px;
+    margin-top: 40px;
     color: #e7e7e0;
+  }
+}
+
+.success{
+  h1{
+    border: 1px solid white;
+    background-color: white;
+    color: black !important;
+    border-radius: 17px;
+    font-size: 53px !important;
+  }
+
+  p{
+    font-size: 22px;
+    margin: 10px 0;
+    color: white;
+    font-family: montserrat;
   }
 }
 
